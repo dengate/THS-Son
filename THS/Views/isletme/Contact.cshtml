@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>İletişime Geçin</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="shortcut icon" href="/resimler/icon.ico" type="image/x-icon" >
+	<link rel="stylesheet" type="text/css" href="~/Scripts/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Scripts/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="~/Scripts/css/util.css">
+	<link rel="stylesheet" type="text/css" href="~/Scripts/css/main.css">
+    <link href="~/Scripts/css/menucubuk.css" rel="stylesheet" />
+    <link href="~/Scripts/css/ustmenu.css" rel="stylesheet" />
+
+
+</head>
+<body>
+            <div class="ustmenu" style="margin-top:0; position:relative;">
+<div class="container-fluid menu">
+<div class="container">
+<div class="logodiv"><img class="logo" src="/resimler/logo5.png" /></div>
+<div><a class="btn" id="girisbuton" style="opacity:1;" href="/isletme/AnaSayfa"><button class="girisbuton">Geri</button></a></div>
+</div>
+</div>
+</div>
+	<div class="bg-contact2" style="background-image: url('images/bg-01.jpg');">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form action="/isletme/Contact" method="post" enctype="multipart/form-data" class="contact2-form validate-form" onsubmit="return onay(this)">
+					<span class="contact2-form-title">
+						Bize ulaşın
+					</span>
+
+					<div class="wrap-input2 validate-input" >
+						<input class="input2" type="text" id="ad" name="ad">
+						<span class="focus-input2" data-placeholder="Adınızı Girin"></span>
+					</div>
+                    <div class="wrap-input2 validate-input" >
+						<input class="input2" type="text" id="soyad" name="soyad">
+						<span class="focus-input2" data-placeholder="Soyadınızı Girin"></span>
+					</div>
+                    <div class="wrap-input2 validate-input" data-validate="Name is required">
+						<input class="input2" type="text" id="isadi" name="isadi">
+						<span class="focus-input2" data-placeholder="İşletme Adı"></span>
+					</div>
+                    <div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input2" type="text" id="mail" name="mail">
+						<span class="focus-input2" data-placeholder="MAIL Adresi"></span>
+					</div>
+                    <div class="wrap-input2 validate-input" data-validate="Name is required">
+						<input class="input2" type="text" id="pnumber" name="pnumber">
+						<span class="focus-input2" data-placeholder="Telefon Numarası"></span>
+					</div>
+                    <div class="wrap-input2 validate-input" data-validate="Name is required">
+						<input class="input2" type="text" id="baslik" name="baslik">
+						<span class="focus-input2" data-placeholder="Konu Başlığı"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "Message is required">
+						<textarea class="input2" id="mesaj" name="mesaj"></textarea>
+						<span class="focus-input2" data-placeholder="Mesajınız"></span>
+					</div>
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn">
+								Gönder
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+    <script src="~/Scripts/js/jquery-3.2.1.min.js"></script>
+    <script src="~/Scripts/js/main.js"></script>
+     <script>
+         function openForm() {
+             document.getElementById("myForm").style.display = "block";
+         }
+
+         function closeForm() {
+             document.getElementById("myForm").style.display = "none";
+         }
+         </script>
+    <script>
+        function onay(frm) {
+            var mail = frm.mail.value;
+            if (mail == null | mail == "" | mail.length < 1) {
+                alert("Mail adresi boş bırakılamaz!");
+                return false;
+            }
+            else {
+                alert("Mesajınız Gönderildi !");
+                return true;
+            }
+        }
+    </script>
+
+
+</body>
+</html>

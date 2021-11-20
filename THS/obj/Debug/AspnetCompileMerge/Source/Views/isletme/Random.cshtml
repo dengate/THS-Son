@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Random</title>
+    <style>
+        .buton {
+            position: fixed;
+            right: 10px;
+            font-size: 20px;
+            background-color: #e22e85;
+            width: 100px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            top: 50px;
+            color: #ffffff;
+        }
+
+        .sayi {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            margin-left: -375px;
+            margin-top: -172.5px;
+            font-size: 300px;
+        }
+    </style>
+
+    <script>
+        setInterval(yenile, 600000);
+        $(function () {
+            $("body").on("click", "#dgstr", yenile);
+        });
+
+        function yenile() {
+            $.ajax(
+                             {
+                                 url: "/isletme/RandomGetir/",
+                                 type: "POST",
+                                 contentType: 'application/json; charset=utf-8',
+                                 success: function (gelenbilgi) {
+                                     $("#sayi").html(gelenbilgi);
+                                 },
+                                 error: function () {
+                                     alert("Hata oluştu");
+                                 }
+                             }
+                             );
+        }
+    </script>
+</head>
+<body>
+    <div class="sayi" id="sayi">
+        @ViewBag.rndm
+    </div>
+    <div class="buton" id="dgstr">Değiştir</div>
+</body>
+</html>

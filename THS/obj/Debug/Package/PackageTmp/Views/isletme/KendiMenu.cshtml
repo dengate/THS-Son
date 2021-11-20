@@ -1,0 +1,376 @@
+﻿@using THS.Models;
+
+
+
+
+
+@{
+    ViewBag.Title = "Menü";
+    List<sistemurun> arda = ViewData["urunler"] as List<sistemurun>;
+}
+<!DOCTYPE html>
+<head>
+    <html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="~/Scripts/css/menucubuk.css" rel="stylesheet" />
+    <link href="~/Scripts/css/ustmenu.css" rel="stylesheet" />
+    <link href="~/Scripts/css/Popup.css" rel="stylesheet" />
+
+
+    <style>
+        .containers2 {
+            width: 80%;
+            margin: 8em auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 330px;
+            border-radius: 20px;
+            padding: 35px;
+            margin: 1.2em 0;
+            background: #FFFFFF;
+            border: 3px solid #b5b5b5;
+            border-radius: 35px;
+        }
+
+            .card:hover {
+                border: 3px solid #ee1b98;
+                box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+            }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .header .title .name {
+                font-size: 1.8em;
+                font-weight: bold;
+            }
+
+            .header .price {
+                margin: auto;
+                text-align: center;
+                font-weight: 400;
+            }
+
+                .header .price span {
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+        .img {
+            margin: 3em auto;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+            height: 130px;
+        }
+
+            .img img {
+                width: 126px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                min-height: 150px;
+                min-width: 150px;
+                max-width: 150px;
+                max-height: 150px;
+            }
+
+        .amount {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .amount h4 {
+                font-size: 1em;
+                padding: 8px 0;
+            }
+
+            .amount .count {
+                display: flex;
+                background: rgba(255, 254, 254, 0.4);
+                padding: 0 5px;
+                border-radius: 20px;
+            }
+
+                .amount .count button {
+                    width: 30px;
+                    background: white;
+                    text-align: center;
+                    height: 30px;
+                    border-radius: 50%;
+                    padding: 3px;
+                    font-weight: bolder;
+                    border: none;
+                    margin: auto;
+                    font-size: 1em;
+                }
+
+                .amount .count input {
+                    margin: auto 10px;
+                    font-weight: 700;
+                    width: 30px;
+                    text-align: center;
+                    border: none;
+                    font-size: 1.1em;
+                    border-radius: 5px;
+                }
+
+        .foot-card {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+            .foot-card button {
+                width: 75%;
+                border-radius: 30px;
+                border: none;
+                padding: 0.6em;
+                background: white;
+                transition: all 0.2s;
+                background: #c2f1d6;
+                margin-left: 15%;
+                margin-right: auto;
+            }
+
+                .foot-card button:hover {
+                    background: #ee1b98;
+                    color: white;
+                }
+
+            .foot-card .save {
+                margin: auto 0;
+            }
+
+        .price {
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .box {
+            width: 40%;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 35px;
+            border: 2px solid #fff;
+            border-radius: 20px/50px;
+            background-clip: padding-box;
+            text-align: center;
+        }
+
+        .button {
+            font-size: 1em;
+            padding: 10px;
+            color: #ee1b98;
+            border: 2px solid #ee1b98;
+            border-radius: 20px/50px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 2;
+        }
+
+            .overlay:target {
+                visibility: visible;
+                opacity: 1;
+            }
+
+        .popup {
+            margin: 70px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            width: 30%;
+            position: relative;
+            transition: all 5s ease-in-out;
+        }
+
+            .popup h2 {
+                text-align: center;
+                margin-top: 0;
+                color: #333;
+                font-family: Tahoma, Arial, sans-serif;
+            }
+
+            .popup .close {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                transition: all 200ms;
+                font-size: 30px;
+                font-weight: bold;
+                text-decoration: none;
+                color: #333;
+            }
+
+                .popup .close:hover {
+                    color: #06d85f;
+                }
+
+            .popup .content {
+                max-height: 30%;
+                overflow: auto;
+            }
+        .altktgr {
+            width: 100%;
+    height: 30px;
+    border-radius: 10px;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $("body").on("click", "#buton", function () {
+                var val3 = $(this).parent("div").parent("div").children("#id").html();
+                $("#popupid").html(val3);
+                $(".modal1").css("visibility", "visible");
+                $(".modal1").css("opacity", "1");
+
+            });
+        });
+
+        $(function () {
+            $("body").on("click", ".carpi", function () {
+                $(".modal1").css("visibility", "hidden");
+                $(".modal1").css("opacity", "0");
+            });
+        });
+
+        $(function () {
+            $("body").on("click", "#onayla", function () {
+                var y = $("#KategoriSecim").find(":selected").prev().html();
+                var val3 = $("#popupid").html();
+                if (y == "000") {
+                    alert("Lütfen Alt Kategori Seçiniz");
+                }
+
+                else {
+                    $.ajax(
+                   {
+                       url: "/isletme/Ekle/",
+                       type: "POST",
+                       contentType: 'application/json; charset=utf-8',
+                       data: JSON.stringify({ katid: y, id: val3 }),
+                       success: function (gelenbilgi) {
+                           $(".modal1").css("visibility", "hidden");
+                           $(".modal1").css("opacity", "0");
+                           alert("Başarıyla Eklendi");
+                       },
+                       error: function () {
+                           alert("Hata oluştu");
+                       }
+                   }
+
+   );
+
+                }
+
+
+            });
+        });
+
+
+
+
+    </script>
+    <div class="ustmenu">
+        <div class="container-fluid menu">
+            <div class="container">
+                <div class="logodiv">
+                    <img class="logo" src="/resimler/logo5.png" />
+                </div>
+                <div>
+                    <a class="btn" id="girisbuton" style="opacity: 1;" href="/isletme/AnaSayfa">
+                        <button class="girisbuton">Geri</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <body>
+        <div class="containers2">
+            @foreach (var a in arda)
+            {
+                <div class="card">
+                    <div id="id" style="display: none">@a.Urun_ID</div>
+                    <div class="img">
+                        <img src="~/Fotograflar/@a.Urun_resmi"/ >
+                    </div>
+                    <div class="price">
+                        Ürün Adı :<span id="urunadi"> @a.Urun_adi</span>
+                        <br>
+                    </div>
+                    <div class="price">
+                        Ürün Fiyatı :<span id="urunfiyati"> @a.Urun_fiyati</span>
+                        <br>
+                    </div>
+                    <div class="price">
+                        Ürün Açıklaması :<span id="urunaciklamasi"> @a.Urun_aciklamasi</span>
+                        <br>
+                    </div>
+                    <div class="price">
+                        Ürün Kalorisi :<span id="urunkalorisi"> @a.Urun_kalorisi</span>
+                        <br>
+                    </div>
+                    <div class="price">
+                        Ürün Pişme Süresi :<span id="urunpisme"> @a.Urun_pismeSuresi</span>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a class="button" id="buton">Ekle</a>
+                    </div>
+                </div>
+            }
+
+        </div>
+
+        <div class="modal1">
+            <div id="popupid" style="display: none"></div>
+            <div class="creditcard-box2">
+                <div class="carpi"><a class="close">&times;</a></div>
+                <div class="boxdiv2">
+                    <div class="name-box-ust">
+                        <div class="box-yazi">Alt Kategori Seçiniz.</div>
+                        <select class="form-control form-control-lg altktgr" id="KategoriSecim">
+                            <option class="gizli" style="display: none; visibility: hidden; opacity: 0;">000</option>
+                            <option selected id="secili">Alt Kategori</option>
+                            @for (int i = 0; i < ViewBag.alt.Count; i++)
+                            {
+                                <option class="gizli" style="display: none; visibility: hidden; opacity: 0;">@ViewBag.alt[i].id</option>
+                                <option>@ViewBag.alt[i].isim</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="boxdiv2">
+                    <div class="odemebutonbox" id="onayla">
+                        <div class="odemebutonyazi">Onayla</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </body>
+    </html>

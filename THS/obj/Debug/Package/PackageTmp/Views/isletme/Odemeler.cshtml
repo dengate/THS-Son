@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Odemeler";
+    Layout = "~/Views/Shared/KontrolLayout.cshtml";
+}
+
+@foreach (var item in ViewBag.Odemeler)
+{
+    <div class="altdivbtns" style="cursor:default !important;">
+        <div class="altdivbtnsol">
+            <div class="altdivbtnsolust">Masa</div>
+            <div class="altdivbtnsolalt">@item.masaid</div>
+        </div>
+        <div class="altdivbtnsol">
+            <div class="altdivbtnsolust">Müşteri</div>
+            <div class="altdivbtnsolalt" style="font-size:20px !important;"><div style="width:100%;padding-top:25%">@item.mstrid</div></div>
+        </div>
+        <div class="altdivbtnsol">
+            <div class="altdivbtnsolust" style="height:38% !important;" >Ödeme Zamanı</div>
+            <div class="altdivbtnsolalt" style="font-size:12px !important; height:62% !important;"><div style="width:100%;padding-top:25%">@item.odemezamani</div></div>
+        </div>
+        <div class="altdivbtnsol">
+            <div class="altdivbtnsolust">Tutar</div>
+            <div class="altdivbtnsolalt" style="font-size:20px !important;"><div style="width:100%;padding-top:25%">@item.tutari TL</div></div>
+        </div>
+
+    </div>
+}

@@ -1,0 +1,62 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>THS</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="shortcut icon" href="/resimler/icon.ico" type="image/x-icon">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="~/Scripts/css/IsletmeciGiris.css" rel="stylesheet" />
+    <link href="~/Scripts/css/Popup.css" rel="stylesheet" />
+    <script>
+        $(function () {
+            $("body").on("click", "#mymodal4close", function () {
+                $(".modal4").css("visibility", "hidden");
+                $(".modal4").css("opacity", "0");
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="container giris-container">
+        <div class="giris-form">
+            <form action="/isletme/Giris" method="post" enctype="multipart/form-data">
+                <h3>İŞLETME GİRİŞİ</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="kullaniciadi" id="kullaniciadi" placeholder="Email *" value="" />
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="sifre" id="sifre" placeholder="Şifre*" value="" />
+                </div>
+                <div class="form-group">
+                    <a href="/Sehirler/ankara">
+                        <input type="submit" class="btnSubmit" value="Giriş" /></a>
+                </div>
+                <div class="form-group">
+
+                    <a href="#" class="btnForgetPwd" value="Login">Şifrenizi mi unuttunuz?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    @if (ViewBag.durum == 1)
+    {
+        <div class="modal4" style="visibility: visible !important; opacity: 1 !important;">
+            <div id="Detaypup" class="Detay">
+                <div class="carpi2"><a class="close2" id="mymodal4close">&times;</a></div>
+                <div style="text-align: center; height: 190px;">
+                    <div id="detayazi" style="padding-top: 15%; font-size: 18px; color: #3d5892;">
+                        @ViewBag.durumyazi
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>

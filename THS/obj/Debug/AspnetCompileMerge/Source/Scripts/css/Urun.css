@@ -1,0 +1,369 @@
+﻿.urunlercontainer {
+    height: 100%;
+    background-color: #ffffff;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.uruncontainer {
+    float: left;
+    width: 350px;
+    height: 426px;
+    margin-right: 60px;
+    margin-left: 110px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.urunust {
+    width: 350px;
+    height: 300px;
+}
+
+.urunimg {
+    width: 300px;
+    height: 300px;
+    float: left;
+    border-radius: 10px;
+}
+
+.urunyanbtn {
+    width: 50px;
+    height: 300px;
+    float: left;
+}
+
+.urunyanbtn {
+    cursor: pointer;
+}
+
+.urunyanbtndiv1 {
+    width: 50px;
+    height: 300px;
+    background-color: #9097a5;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+    .urunyanbtndiv1:hover {
+        background-color: #ffffff;
+        color: #9097a5;
+        border: 2px solid #9097a5;
+    }
+
+.urunyanbtndiv2 {
+    padding-top: 115.5px;
+}
+
+.urunyanbtndiv3 {
+    transform: rotate(270deg);
+    font-size: 17px;
+    width: 95px;
+    padding-bottom: 42.5px;
+}
+
+.uruncontainer a {
+    text-decoration: none;
+}
+
+.urunisim {
+    text-align: center;
+    width: 300px;
+    height: 56px;
+    font-size: 20px;
+    overflow: auto;
+}
+
+.urunaltbtn {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 0;
+}
+
+.urunaltbtndiv1 {
+    width: 100px;
+    height: 60px;
+    float: left;
+    background-color: #9097a5;
+    border-radius: 45px;
+    border: 1px solid #ffffff;
+}
+
+.urunaltbtndiv2 {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.urunaltbtndivdetay {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.urunaltbtndiv3 {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+.detaybtn {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+    .detaybtn:hover {
+        background-color: #ffffff;
+        color: #9097a5;
+        border: 1px solid #9097a5;
+    }
+
+.sepet {
+    width: 150px;
+    height: 40px;
+    background-color: #0cf157;
+    color: #ffffff;
+    right: 0;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 10px;
+    top: 155px;
+    position: fixed;
+    border: 1px solid #000;
+    text-align: center;
+    z-index: 9;
+    transition: all .4s ease-in-out;
+}
+
+
+
+.yukari {
+    left: 0;
+    background-color: #ffd800;
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    top: 155px;
+    position: fixed;
+    border: 1px solid #000;
+    text-align: center;
+    z-index: 9;
+    transition: all .4s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+    .yukari:hover {
+        border: 1px solid #ffd800;
+        background-color: #ffffff;
+        transform: scale(1.1);
+        color: #ffd800;
+        text-decoration: none;
+    }
+
+
+.rezervasyon {
+    width: 150px;
+    height: 40px;
+    background-color: #685386;
+    color: #ffffff;
+    right: 0;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 10px;
+    top: 155px;
+    position: fixed;
+    border: 1px solid #000;
+    text-align: center;
+    z-index: 9;
+    transition: all .4s ease-in-out;
+}
+
+.sepet:hover {
+    border: 1px solid #0cf157;
+    background-color: #ffffff;
+    transform: scale(1.1);
+    color: #0cf157;
+    text-decoration: none;
+}
+
+.rezervasyon:hover {
+    border: 1px solid #685386;
+    background-color: #ffffff;
+    transform: scale(1.1);
+    color: #685386;
+    text-decoration: none;
+}
+
+.sepetyazi {
+    margin-top: 8px;
+}
+
+.sepetsayi {
+    z-index: 9;
+    font-size: 13px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+}
+
+.secenekbackground {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+    z-index: 1000000;
+    visibility: visible;
+    opacity: 1;
+}
+
+.secenekodemebuton {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    border: 2px solid #883030;
+    border-radius: 20px;
+    top: 45%;
+    left: 35%;
+    color: #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all ease-in-out;
+}
+
+    .secenekodemebuton:hover {
+        border: 4px solid #ffffff;
+        transform: scale(1.1);
+    }
+
+.secenekmenubuton {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    border: 2px solid #883030;
+    border-radius: 20px;
+    color: #ffffff;
+    top: 45%;
+    left: 60%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+    .secenekmenubuton:hover {
+        border: 4px solid #ffffff;
+        transform: scale(1.1);
+    }
+
+.secenekimg {
+    width: 100%;
+    height: 80%;
+}
+
+.secenekyazi {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 19px;
+    background-color: #883030;
+}
+
+@media all and (max-width:1200px) {
+    .uruncontainer {
+        float: none;
+        margin: auto;
+    }
+}
+
+@media all and (max-width:1025px) {
+    .secenekdiv {
+        width: 100%;
+        height: 200px;
+        margin-top: 100px;
+        position: relative;
+    }
+
+    .secenekodemebuton {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: auto;
+    }
+
+    .secenekmenubuton {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: auto;
+    }
+}
+
+@media all and (max-width:664px) {
+    .sepet {
+        width: 70px;
+        height: 70px;
+        top: auto;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 50%;
+    }
+
+    .yukari {
+        width: 70px;
+        height: 70px;
+        top: auto;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 50%;
+    }
+
+    .rezervasyon {
+        width: 105px;
+        height: 70px;
+        top: auto;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 50%;
+    }
+
+    .sepetyazi {
+        margin-top: 21px;
+    }
+}
+
+
+@media all and (max-width:400px) {
+
+    .urunimg {
+        width: 250px;
+    }
+
+    .uruncontainer {
+        width: 300px;
+    }
+
+    .urunust {
+        width: 300px;
+    }
+}
+
+@media all and (max-width:338px) {
+
+    .urunimg {
+        width: 230px;
+    }
+
+    .uruncontainer {
+        width: 280px;
+    }
+
+    .urunust {
+        width: 280px;
+    }
+}

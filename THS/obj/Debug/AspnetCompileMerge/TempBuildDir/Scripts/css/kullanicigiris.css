@@ -1,0 +1,28 @@
+﻿@media (max-width: 585px) {
+        .btn {
+        display: none !important;
+    }
+        .menu {
+        height: 140px;
+    }
+        .btn2 {
+        position: fixed;
+    top: 70px;
+    right: 40%;
+    }
+
+        .logodiv {
+    position: relative;
+    float: none;
+    margin: auto;
+}
+    
+}
+
+@media (max-width: 400px) {
+        .btn2 {
+    right: 35%;
+    }
+    
+}
+

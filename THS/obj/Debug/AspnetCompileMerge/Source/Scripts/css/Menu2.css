@@ -1,0 +1,526 @@
+﻿.logo {
+    width: 300px;
+    height: 70px;
+    position: relative;
+    float: left;
+    cursor:pointer;
+}
+
+.btn {
+    float: right;
+    padding-top: 9px;
+    overflow: hidden;
+}
+
+.btn2 {
+    float: right;
+    padding-top: 9px;
+    overflow: hidden;
+}
+
+
+.girisbuton {
+    width: 100px;
+    height: 50px;
+    background-color: #020101;
+    border: 1px solid #f7f1f1;
+    border-radius: 5px;
+    font-family: Open Sans,sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 38px;
+    transition: all .4s ease-in-out;
+}
+
+.head {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.sabitleme {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.menu {
+    background-color: #020101;
+    height: 70px;
+    opacity: 0.8;
+}
+
+.sehirlerContainer {
+    position: relative;
+    min-height: 100px;
+    width: 100%;
+    display: block;
+    overflow: auto;
+    margin-bottom: 12px;
+    z-index: 3;
+}
+
+.sehirbtn {
+    width: 63px;
+    height: 82px;
+    z-index: 2;
+    font-family: Open Sans,sans-serif;
+    display: inline-block;
+    padding: 0;
+    margin-right: 12.5px;
+    margin-left: 12.5px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    min-height: 82px;
+}
+
+.sehirContainer {
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 50%; /*Firefox (-moz-)*/
+    -webkit-border-radius: 50%; /*Chrome ve Safari (-webkit-)*/
+    border-radius: 50%;
+    background-color: #01084c;
+    border: 2px solid #5e6bea;
+    display: block;
+    box-shadow: 0 2px 0 0 rgba(0,0,0,.08);
+    color: #fff;
+    margin: auto auto 9px;
+    opacity: 0.9;
+    transition: all .4s ease-in-out;
+    z-index: 999999;
+}
+
+.sehirContainer:hover {
+        background-color: #fff;
+        color: #01084c;
+        transform: scale(1.5);
+    }
+
+.plaka {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 38px;
+    text-align: center;
+    display: block;
+    padding-top: 6px;
+}
+
+.isim {
+    width: 63px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    line-height: 14px;
+    transition: all .4s ease-in-out;
+    z-index: 999999;
+}
+
+.isim:hover {
+        transform: scale(1.5);
+    }
+
+.sehirlerContainer a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('/resimler/yemek5.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#footer {
+    overflow: hidden;
+    width: 100%;
+    height: 290px;
+    background-color: #fff;
+    margin-top: 250px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    opacity: 0.9;
+}
+
+.smicons {
+    width: 70px;
+    height: 70px;
+    -moz-border-radius: 50%; /*Firefox (-moz-)*/
+    -webkit-border-radius: 50%; /*Chrome ve Safari (-webkit-)*/
+    border-radius: 50%;
+    display: block;
+    margin-right: 20px;
+    text-align: center;
+    color: #fff;
+    transition: all .4s ease-in-out;
+}
+
+.smicons:hover {
+        transform: rotate(360deg);
+        filter: brightness(150%);
+    }
+
+.socialmedia {
+    width: 290px;
+    height: 70px;
+    top: 90px;
+    position: relative;
+    right: 20px;
+    float: none;
+    margin: auto 0 auto auto;
+}
+
+.icon {
+    display: inline-block;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.girisbuton:hover {
+    border: none;
+    background-color: #fff;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.footericon {
+    margin-top: 65px;
+    margin-left: 1%;
+    float: left;
+}
+
+.smtext {
+    text-align: center;
+    width: 290px;
+    height: 30px;
+    top: 70px;
+    position: relative;
+    right: 20px;
+    float: none;
+    margin: auto 15px auto auto;
+    overflow: hidden;
+}
+
+.socialtext {
+    text-align: center;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.footerbilgi {
+    width: 717px;
+    height: 190px;
+    margin-top: 5px;
+    float: left;
+    margin-left: 20px;
+}
+
+.contact {
+    width: 350px;
+    height: 189px;
+    margin-top: 0.5px;
+    float: left;
+}
+
+.contact1 {
+    float: left;
+    margin-right: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b34444;
+}
+
+.contact2 {
+    float: left;
+    margin-right: 70px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635151;
+}
+
+.contact3 {
+    float: left;
+    margin-right: 70px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635151;
+}
+
+.feedback1 {
+    float: left;
+    margin-right: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b34444;
+}
+
+.feedback2 {
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635151;
+}
+
+.feedback3 {
+    float: left;
+    margin-left: 30px;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635151;
+}
+
+.fpng {
+    width: 40px;
+    height: 40px;
+    margin-top: 14px;
+    margin-right: 7px;
+}
+
+.ipng {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.tpng {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.logodiv {
+    width:300px;
+    float:left;
+    height:70px;
+    
+}
+
+@media all and (max-width:1200px) {
+
+    .feedback {
+        display: none;
+    }
+}
+
+@media all and (min-width:992px) and (max-width:1200px) {
+    .footerbilgi {
+        width: 400px;
+    }
+}
+
+@media all and (min-width:788px) and (max-width:992px) {
+    .footerbilgi {
+        width: 332px;
+    }
+
+    .contact {
+        width: 330px;
+    }
+
+    .container {
+        width:100%
+    }
+}
+
+@media all and (max-width:787px) {
+    .footerbilgi {
+        width: 332px;
+        height: auto;
+        float: none;
+        margin: auto 15px auto auto;
+    }
+
+    .smtext {
+        display: none;
+    }
+
+    .contact {
+        width: 330px;
+        height: 35px;
+        float: right;
+        margin-top: 0;
+    }
+
+    .contact1 {
+        display: none;
+    }
+
+    .contact2 {
+        margin-top: 18px;
+        margin-right: 10px;
+        margin-left: 70px;
+    }
+
+    .contact3 {
+        margin-right: 10px;
+        margin-left: 70px;
+    }
+
+    .container {
+        width:100%;
+    }
+
+}
+
+@media all and (max-width:500px) {
+    .smicons {
+        width: 40px;
+        height: 40px;
+    }
+
+    .fpng {
+        width: 25px;
+        height: 25px;
+        margin-top: 7px;
+        margin-right: 4px;
+    }
+
+    .ipng {
+        width: 25px;
+        height: 25px;
+        margin-top: 7.5px;
+    }
+
+    .tpng {
+        width: 25px;
+        height: 25px;
+        margin-top: 7.5px;
+    }
+
+    .smtext {
+        display: none;
+    }
+
+    .socialmedia {
+        width: 187px;
+        right: 0;
+        top: 120px;
+    }
+
+    .smicons {
+        margin-right: 10px;
+    }
+
+    .sehirbtn {
+        width:25%
+    }
+
+    .isim {
+        margin:auto;
+    }
+
+}
+@media all and (max-width:485px) {
+    .menu {
+    height: 140px;
+}
+        .logodiv {
+        position:relative;
+        float:none;
+        margin:auto;
+
+}
+    .btn {
+        float:none;
+        width:100%;
+        margin:auto;
+    }
+}
+    
+
+@media all and (max-width:480px) {
+    .contact {
+        width: 220px;
+        margin-right: 19px;
+    }
+
+    .contact2 {
+        margin-top: 18px;
+        margin-right: 10px;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .contact3 {
+        margin-right: 10px;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .sehirsec {
+        width:100%;
+        float: none;
+        margin:auto;
+
+}
+
+.isletmesec {
+    width:100%;
+    float: none;
+    margin:auto;
+}
+
+
+.masanumara {
+    float:none; 
+    margin:auto;
+    margin-top:15px;
+}
+
+.logo {
+   
+    float: none;
+    margin:auto;
+}
+}
+
+@media all and (max-width:342px) {
+    .logo {
+        width: 280px;
+    }
+
+    .footericon {
+        margin-right: 20px;
+    }
+}
+
+
+@media all and (max-width:370px) {
+    .sehirbtn {
+        width:23%
+    }
+}
+

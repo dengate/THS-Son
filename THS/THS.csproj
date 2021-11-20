@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4AC3305-8078-4D08-815A-532FF6BA351F}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>THS</RootNamespace>
+    <AssemblyName>THS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AnaSayfaController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\isletmeController.cs" />
+    <Compile Include="Controllers\KullanıcıGırısController.cs" />
+    <Compile Include="Controllers\RestoranlarController.cs" />
+    <Compile Include="Controllers\SehirlerController.cs" />
+    <Compile Include="Controllers\YoneticiController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\altkategori.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ilce.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\kategori.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\masa.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\musteri.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\odeme.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\restoran.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\rezervasyon.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sehir.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\semt.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sipari.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sistemurun.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\urun.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\yonetici.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\yorum.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="resimler\qr.jpeg" />
+    <Content Include="Scripts\css\Anasayfa.css" />
+    <Content Include="Scripts\css\isletmemenu.css" />
+    <Content Include="Scripts\css\kullanicigiris.css" />
+    <Content Include="Scripts\css\QrKod.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Fotograflar\adana.jpg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-6li-chicken-tenders-menu.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-6li-tavuk-kanatlari-menu.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-algida-maras-cup-105ml-dondurma-ca4c.jpg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-applepie.jpg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-besiktas-kral-burger-taraftar-menu.jpg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-bk-steakhouse-burger-menu.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-cay.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-chicken-royale.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-cola.jfif" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-dondurma.jfif" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-double-king-chicken-menu.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-double-kofteburger-1.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-double-whopper-1.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-fanta.jfif" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-ketcap.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-king-delight-akdeniz-salata-1.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-king-delight-ton-salata.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-kralikili.jfif" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-mayonez.jfif" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-ranch.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-sogan-halkasi.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-sprite.jpg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-visneli-tatli.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-BurgerKing-whopper-menu-1.png" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-ahududulu.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-americano.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-brownie.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-caffemocha.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-CaramelFrappuccino.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-caramelmacchiato.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-fiesta.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-freshfilter.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-Gingerbread.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-hazelnutsignature.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-hotsignature.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-icedamericano.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-icedcaramel.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-icedLatte.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-icedwhitecmocha.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-Latte.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-limonlu.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-mistik.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-misto.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-signature.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-WhitecmFrappuccino.jpeg" />
+    <Content Include="Fotograflar\Ankara-Kızılay-Starbucks-whitecmocha.jpeg" />
+    <Content Include="Fotograflar\asure.jpg" />
+    <Content Include="Fotograflar\beyti.jpg" />
+    <Content Include="Fotograflar\Bizimrestoran.jpg" />
+    <Content Include="Fotograflar\fanta.jpg" />
+    <Content Include="Fotograflar\Gazoz.png" />
+    <Content Include="Fotograflar\hamburger.jpg" />
+    <Content Include="Fotograflar\iskender.jpg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-cevizlimidyebaklava.jpeg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-ekler.jpeg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-Fistiklibaklava.jpeg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-fistiklikadayif.jpeg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-frambuazlitrilece.jpeg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-halkatatlisi.jpeg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-hayrabolutatlisi.jpeg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-karamellitrilece.jpeg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-ozelfistiklibaklava.jpeg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-sadecikolatalifistiklimaras.jpeg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-sadecikolatalimaraskesme.jpeg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-sademarasdondurma.jpeg" />
+    <Content Include="Fotograflar\Izmir-Alacati-BizimTatlici-sutlunuriye.jpeg" />
+    <Content Include="Fotograflar\kadayif.jpg" />
+    <Content Include="Fotograflar\kazandibi.jpg" />
+    <Content Include="Fotograflar\kellepaca.jpg" />
+    <Content Include="Fotograflar\kola.jpg" />
+    <Content Include="Fotograflar\kumpir.jpg" />
+    <Content Include="Fotograflar\merco.jpg" />
+    <Content Include="Fotograflar\pizza.jpg" />
+    <Content Include="Fotograflar\tavuksuyu.jpg" />
+    <Content Include="Global.asax" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Scripts\js\isletmemenu.js" />
+    <Content Include="Scripts\js\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\js\main.js" />
+    <Content Include="resimler\1.png" />
+    <Content Include="resimler\10.png" />
+    <Content Include="resimler\11.png" />
+    <Content Include="resimler\2.png" />
+    <Content Include="resimler\3.png" />
+    <Content Include="resimler\4.png" />
+    <Content Include="resimler\5.png" />
+    <Content Include="resimler\6.png" />
+    <Content Include="resimler\7.png" />
+    <Content Include="resimler\8.png" />
+    <Content Include="resimler\9.png" />
+    <Content Include="resimler\arda.jpg" />
+    <Content Include="resimler\logo5.png" />
+    <Content Include="resimler\siyah.jpg" />
+    <Content Include="resimler\big-king-ailesi-genisledi.jpg" />
+    <Content Include="resimler\Bizimrestoran.jpg" />
+    <Content Include="resimler\facebook.png" />
+    <Content Include="resimler\instagram.png" />
+    <Content Include="resimler\kutlama-kovasi-ve-twister-desktop-tr1.jpg" />
+    <Content Include="resimler\logo6.png" />
+    <Content Include="resimler\menubutonresmi.jpg" />
+    <Content Include="resimler\odemebutonresmi.jpg" />
+    <Content Include="resimler\pizza-hut-kopia.png" />
+    <Content Include="resimler\restoran2.jpg" />
+    <Content Include="resimler\restoran3.jpg" />
+    <Content Include="resimler\twitter.jpg" />
+    <Content Include="resimler\yanyanaseffaf.png" />
+    <Content Include="resimler\yemek5.jpg" />
+    <Content Include="resimler\yemek7.jpg" />
+    <Content Include="resimler\restourant.jpg" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\css\animate.css" />
+    <Content Include="Scripts\css\arda.css" />
+    <Content Include="Scripts\css\bg.css" />
+    <Content Include="Scripts\css\bootstrap.min.css" />
+    <Content Include="Scripts\css\font-awesome.min.css" />
+    <Content Include="Scripts\css\foto.css" />
+    <Content Include="Scripts\css\giris.css" />
+    <Content Include="Scripts\css\isletme.css" />
+    <Content Include="Scripts\css\IsletmeciGiris.css" />
+    <Content Include="Scripts\css\Loader.css" />
+    <Content Include="Scripts\css\main.css" />
+    <Content Include="Scripts\css\Menu.css" />
+    <Content Include="Scripts\css\Menu2.css" />
+    <Content Include="Scripts\css\menucubuk.css" />
+    <Content Include="Scripts\css\Page.css" />
+    <Content Include="Scripts\css\Popup.css" />
+    <Content Include="Scripts\css\rez.css" />
+    <Content Include="Scripts\css\rez2.css" />
+    <Content Include="Scripts\css\Sepet.css" />
+    <Content Include="Scripts\css\Style.css" />
+    <Content Include="Scripts\css\Urun.css" />
+    <Content Include="Scripts\css\ustmenu.css" />
+    <Content Include="Scripts\css\util.css" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\index.d.ts" />
+    <None Include="Scripts\jquery-3.0.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.0.0.js" />
+    <Content Include="Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\KayanMenu.js" />
+    <Content Include="Scripts\js\Logo.js" />
+    <Content Include="Scripts\js\Menubuton.js" />
+    <Content Include="Scripts\js\RestoranScript.js" />
+    <Content Include="Scripts\js\SagTıkEngel.js" />
+    <Content Include="Scripts\js\SehirScript.js" />
+    <Content Include="Scripts\js\Sepet.js" />
+    <Content Include="Scripts\js\Yonetici.js" />
+    <Content Include="Scripts\knockout-2.2.0.debug.js" />
+    <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\src\index.js" />
+    <Content Include="Scripts\src\methods\defaults.js" />
+    <Content Include="Scripts\src\methods\destroy.js" />
+    <Content Include="Scripts\src\methods\disableEventListeners.js" />
+    <Content Include="Scripts\src\methods\enableEventListeners.js" />
+    <Content Include="Scripts\src\methods\placements.js" />
+    <Content Include="Scripts\src\methods\update.js" />
+    <Content Include="Scripts\src\modifiers\applyStyle.js" />
+    <Content Include="Scripts\src\modifiers\arrow.js" />
+    <Content Include="Scripts\src\modifiers\computeStyle.js" />
+    <Content Include="Scripts\src\modifiers\flip.js" />
+    <Content Include="Scripts\src\modifiers\hide.js" />
+    <Content Include="Scripts\src\modifiers\index.js" />
+    <Content Include="Scripts\src\modifiers\inner.js" />
+    <Content Include="Scripts\src\modifiers\keepTogether.js" />
+    <Content Include="Scripts\src\modifiers\offset.js" />
+    <Content Include="Scripts\src\modifiers\preventOverflow.js" />
+    <Content Include="Scripts\src\modifiers\shift.js" />
+    <Content Include="Scripts\src\utils\clockwise.js" />
+    <Content Include="Scripts\src\utils\computeAutoPlacement.js" />
+    <Content Include="Scripts\src\utils\debounce.js" />
+    <Content Include="Scripts\src\utils\find.js" />
+    <Content Include="Scripts\src\utils\findCommonOffsetParent.js" />
+    <Content Include="Scripts\src\utils\findIndex.js" />
+    <Content Include="Scripts\src\utils\getBordersSize.js" />
+    <Content Include="Scripts\src\utils\getBoundaries.js" />
+    <Content Include="Scripts\src\utils\getBoundingClientRect.js" />
+    <Content Include="Scripts\src\utils\getClientRect.js" />
+    <Content Include="Scripts\src\utils\getFixedPositionOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetRect.js" />
+    <Content Include="Scripts\src\utils\getOffsetRectRelativeToArbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getOppositePlacement.js" />
+    <Content Include="Scripts\src\utils\getOppositeVariation.js" />
+    <Content Include="Scripts\src\utils\getOuterSizes.js" />
+    <Content Include="Scripts\src\utils\getParentNode.js" />
+    <Content Include="Scripts\src\utils\getPopperOffsets.js" />
+    <Content Include="Scripts\src\utils\getReferenceNode.js" />
+    <Content Include="Scripts\src\utils\getReferenceOffsets.js" />
+    <Content Include="Scripts\src\utils\getRoot.js" />
+    <Content Include="Scripts\src\utils\getRoundedOffsets.js" />
+    <Content Include="Scripts\src\utils\getScroll.js" />
+    <Content Include="Scripts\src\utils\getScrollParent.js" />
+    <Content Include="Scripts\src\utils\getStyleComputedProperty.js" />
+    <Content Include="Scripts\src\utils\getSupportedPropertyName.js" />
+    <Content Include="Scripts\src\utils\getViewportOffsetRectRelativeToArtbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getWindow.js" />
+    <Content Include="Scripts\src\utils\getWindowSizes.js" />
+    <Content Include="Scripts\src\utils\includeScroll.js" />
+    <Content Include="Scripts\src\utils\index.js" />
+    <Content Include="Scripts\src\utils\isBrowser.js" />
+    <Content Include="Scripts\src\utils\isFixed.js" />
+    <Content Include="Scripts\src\utils\isFunction.js" />
+    <Content Include="Scripts\src\utils\isIE.js" />
+    <Content Include="Scripts\src\utils\isModifierEnabled.js" />
+    <Content Include="Scripts\src\utils\isModifierRequired.js" />
+    <Content Include="Scripts\src\utils\isNumeric.js" />
+    <Content Include="Scripts\src\utils\isOffsetContainer.js" />
+    <Content Include="Scripts\src\utils\removeEventListeners.js" />
+    <Content Include="Scripts\src\utils\runModifiers.js" />
+    <Content Include="Scripts\src\utils\setAttributes.js" />
+    <Content Include="Scripts\src\utils\setStyles.js" />
+    <Content Include="Scripts\src\utils\setupEventListeners.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="SistemMenu\beyti.jpg" />
+    <Content Include="SistemMenu\fanta.jpg" />
+    <Content Include="SistemMenu\gazoz.jpg" />
+    <Content Include="SistemMenu\hamburger.jpg" />
+    <Content Include="SistemMenu\iskender.jpg" />
+    <Content Include="SistemMenu\kazandibi.jpg" />
+    <Content Include="SistemMenu\kellepaca.jpg" />
+    <Content Include="SistemMenu\kola.jpg" />
+    <Content Include="SistemMenu\kumpir.jpg" />
+    <Content Include="SistemMenu\merco.jpg" />
+    <Content Include="SistemMenu\pizza.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Restoranlar\Ankara_Kızılay_BurgerKing.cshtml" />
+    <Content Include="Views\Restoranlar\Ankara_Cayyolu_BizimRestoran.cshtml" />
+    <Content Include="Views\isletme\Giris.cshtml" />
+    <Content Include="Views\Sehirler\KahramanMaras.cshtml" />
+    <Content Include="Views\isletme\AnaSayfa.cshtml" />
+    <Content Include="Views\isletme\RestoranBilgi.cshtml" />
+    <Content Include="Views\isletme\Contact.cshtml" />
+    <Content Include="Views\isletme\Rezervasyon.cshtml" />
+    <Content Include="Views\isletme\Menu.cshtml" />
+    <Content Include="Views\Restoranlar\Ankara_Kızılay_Starbucks.cshtml" />
+    <Content Include="Views\isletme\QrKod.cshtml" />
+    <Content Include="Views\isletme\YemekEkle.cshtml" />
+    <Content Include="Views\isletme\KendiMenu.cshtml" />
+    <Content Include="Views\Restoranlar\Izmir_Alacatı_BizimTatlici.cshtml" />
+    <Content Include="Views\Restoranlar\isletme.cshtml" />
+    <Content Include="Views\Yonetici\Giris.cshtml" />
+    <Content Include="Views\Yonetici\Ana.cshtml" />
+    <Content Include="Views\Yonetici\RestoranEkle.cshtml" />
+    <Content Include="Views\isletme\Random.cshtml" />
+    <Content Include="Views\Restoranlar\Kontrol.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <None Include="Properties\PublishProfiles\a.pubxml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\KontrolLayout.cshtml" />
+    <Content Include="Views\Shared\KullanıcıGirisLayout.cshtml" />
+    <Content Include="Views\Shared\_MainLayout.cshtml" />
+    <Content Include="Views\Shared\_PageLayout.cshtml" />
+    <Content Include="Views\Shared\İsletmeLayout.cshtml" />
+    <Content Include="Views\AnaSayfa\hakkimizda.cshtml" />
+    <Content Include="Views\AnaSayfa\iletisim.cshtml" />
+    <Content Include="Views\KullanıcıGırıs\KullanıcıGırısIndex.cshtml" />
+    <Content Include="Views\Restoranlar\Odeme.cshtml" />
+    <Content Include="Views\Restoranlar\Sepet.cshtml" />
+    <Content Include="Views\isletme\Siparisler.cshtml" />
+    <Content Include="Views\isletme\Odemeler.cshtml" />
+    <Content Include="Views\isletme\Masalar.cshtml" />
+    <Content Include="Views\Sehirler\Adana.cshtml" />
+    <Content Include="Views\Sehirler\Adiyaman.cshtml" />
+    <Content Include="Views\Sehirler\Agri.cshtml" />
+    <Content Include="Views\Sehirler\Amasya.cshtml" />
+    <Content Include="Views\Sehirler\Ankara.cshtml" />
+    <Content Include="Views\Sehirler\Antalya.cshtml" />
+    <Content Include="Views\Sehirler\Aydin.cshtml" />
+    <Content Include="Views\Sehirler\Balikesir.cshtml" />
+    <Content Include="Views\Sehirler\Bilecik.cshtml" />
+    <Content Include="Views\Sehirler\Bingol.cshtml" />
+    <Content Include="Views\Sehirler\Bolu.cshtml" />
+    <Content Include="Views\Sehirler\Burdur.cshtml" />
+    <Content Include="Views\Sehirler\Bursa.cshtml" />
+    <Content Include="Views\Sehirler\Canakkale.cshtml" />
+    <Content Include="Views\Sehirler\Cankiri.cshtml" />
+    <Content Include="Views\Sehirler\Corum.cshtml" />
+    <Content Include="Views\Sehirler\Denizli.cshtml" />
+    <Content Include="Views\Sehirler\Diyarbakir.cshtml" />
+    <Content Include="Views\Sehirler\Edirne.cshtml" />
+    <Content Include="Views\Sehirler\Elazig.cshtml" />
+    <Content Include="Views\Sehirler\Erzincan.cshtml" />
+    <Content Include="Views\Sehirler\Erzurum.cshtml" />
+    <Content Include="Views\Sehirler\Eskisehir.cshtml" />
+    <Content Include="Views\Sehirler\Gaziantep.cshtml" />
+    <Content Include="Views\Sehirler\Giresun.cshtml" />
+    <Content Include="Views\Sehirler\Hatay.cshtml" />
+    <Content Include="Views\Sehirler\İsparta.cshtml" />
+    <Content Include="Views\Sehirler\Mersin.cshtml" />
+    <Content Include="Views\Sehirler\İstanbul.cshtml" />
+    <Content Include="Views\Sehirler\İzmir.cshtml" />
+    <Content Include="Views\Sehirler\Kastamonu.cshtml" />
+    <Content Include="Views\Sehirler\Kayseri.cshtml" />
+    <Content Include="Views\Sehirler\Kirklareli.cshtml" />
+    <Content Include="Views\Sehirler\Kirsehir.cshtml" />
+    <Content Include="Views\Sehirler\Kocaeli.cshtml" />
+    <Content Include="Views\Sehirler\Konya.cshtml" />
+    <Content Include="Views\Sehirler\Kutahya.cshtml" />
+    <Content Include="Views\Sehirler\Malatya.cshtml" />
+    <Content Include="Views\Sehirler\Manisa.cshtml" />
+    <Content Include="Views\Sehirler\Mardin.cshtml" />
+    <Content Include="Views\Sehirler\Mugla.cshtml" />
+    <Content Include="Views\Sehirler\Nevsehir.cshtml" />
+    <Content Include="Views\Sehirler\Nigde.cshtml" />
+    <Content Include="Views\Sehirler\Ordu.cshtml" />
+    <Content Include="Views\Sehirler\Rize.cshtml" />
+    <Content Include="Views\Sehirler\Sakarya.cshtml" />
+    <Content Include="Views\Sehirler\Samsun.cshtml" />
+    <Content Include="Views\Sehirler\Siirt.cshtml" />
+    <Content Include="Views\Sehirler\Sinop.cshtml" />
+    <Content Include="Views\Sehirler\Sivas.cshtml" />
+    <Content Include="Views\Sehirler\Tekirdag.cshtml" />
+    <Content Include="Views\Sehirler\Tokat.cshtml" />
+    <Content Include="Views\Sehirler\Trabzon.cshtml" />
+    <Content Include="Views\Sehirler\Sanliurfa.cshtml" />
+    <Content Include="Views\Sehirler\Usak.cshtml" />
+    <Content Include="Views\Sehirler\Van.cshtml" />
+    <Content Include="Views\Sehirler\Yozgat.cshtml" />
+    <Content Include="Views\Sehirler\Zonguldak.cshtml" />
+    <Content Include="Views\Sehirler\Aksaray.cshtml" />
+    <Content Include="Views\Sehirler\Karaman.cshtml" />
+    <Content Include="Views\Sehirler\Kirikkale.cshtml" />
+    <Content Include="Views\Sehirler\Batman.cshtml" />
+    <Content Include="Views\Sehirler\Bartin.cshtml" />
+    <Content Include="Views\Sehirler\İgdir.cshtml" />
+    <Content Include="Views\Sehirler\Yalova.cshtml" />
+    <Content Include="Views\Sehirler\Karabuk.cshtml" />
+    <Content Include="Views\Sehirler\Osmaniye.cshtml" />
+    <Content Include="Views\Sehirler\Duzce.cshtml" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\index.js.flow" />
+    <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.flow" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65433/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

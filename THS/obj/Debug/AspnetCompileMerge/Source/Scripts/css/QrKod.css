@@ -1,0 +1,93 @@
+﻿{
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #E5FFB3;
+  --background-accent: #DBF8A3;
+  --background-accent-2: #BDE66E;
+  --light: #92DE34;
+  --dark: #69BC22;
+  --text: #025600;
+}
+
+
+
+.arda {
+  display: block;
+  width: 1000px;
+  margin: 0 auto 0 auto;
+  left: 0;
+  right: 0;
+  top: 55vh;
+}
+
+.arda p {
+    margin-top:100px;
+}
+
+.arda a {
+    text-decoration:none;
+}
+
+
+.arda img {
+    max-width:100%;
+    height:auto;
+    margin-bottom:10px;
+}
+
+.buttons {
+  display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--light);
+  width: 400px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px var(--light) inset;
+  margin-bottom: 15px;
+}
+
+.buttons p {
+  position:absolute;
+  margin-top:20px;
+  margin-left:115px;
+  text-align:center;
+}
+
+.buttons:hover {
+  background-image: linear-gradient(
+    145deg,
+    transparent 10%,
+    var(--dark) 10% 20%,
+    transparent 20% 30%,
+    var(--dark) 30% 40%,
+    transparent 40% 50%,
+    var(--dark) 50% 60%,
+    transparent 60% 70%,
+    var(--dark) 70% 80%,
+    transparent 80% 90%,
+    var(--dark) 90% 100%
+  );
+  animation: background 3s linear infinite;
+}
+
+@keyframes background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+.ustmenu {
+    margin-top:-100px;
+    position:fixed;
+    z-index:20;
+}

@@ -1,0 +1,601 @@
+﻿.sepeturunisim {
+    float: left;
+    text-align: center;
+    width: 350px;
+    height: 56px;
+    border-right: 1px solid #026;
+}
+
+.sepeturunmiktar {
+    float: left;
+    text-align: center;
+    width: 60px;
+    height: 56px;
+    border-right: 1px solid #026;
+}
+
+.sepeturunfiyat {
+    float: left;
+    text-align: center;
+    width: 100px;
+    height: 56px;
+    border-right: 1px solid #026;
+}
+
+.sepetsilbuton {
+    float: left;
+    text-align: center;
+    width: 50px;
+    height: 56px;
+    background-color: #cb2020;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.sepetsilbuton:hover {
+        background-color: #ffffff;
+        color: #cb2020;
+        border: 2px solid #cb2020;
+    }
+
+.sepeturunyazi {
+    margin: auto;
+    padding-top: 7.5px;
+    font-size: 18px;
+}
+
+.sepetsilbutonyazi {
+    margin: auto;
+    padding-top: 7.5px;
+    font-size: 18px;
+}
+
+.sepeturuncontainer {
+    width: 560px;
+    height: 56px;
+    outline: 1px solid #026;
+    margin-bottom: 5px;
+}
+
+.sepeturunlercontainer {
+    width: 580px;
+    height: 331px;
+    outline: 2px solid #17439b;
+    background-color: #ffffff;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.sepeturunlercontainer2 {
+    width: 100%;
+    height:331px;
+    outline: 2px solid #17439b;
+    background-color: #ffffff;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.sepeturunlertoplamfiyat {
+    width: 580px;
+    height: 70px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    outline: 2px solid #026;
+}
+
+.sepeturunlertoplamfiyatyazi {
+    float: right;
+    margin: auto;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-right: 60px;
+}
+
+.sepetbaslikcontainer {
+    width: 510px;
+    height: 56px;
+    outline: 1px solid #026;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+.sepethazırlanmadiv {
+
+    width:100%; 
+    height:80px;
+
+}
+
+.sepethazırlanmasure {
+
+    border:1px solid #026; 
+    width:220px; 
+    height:80px; 
+    text-align:center; 
+    float:right; 
+    font-size:17px; 
+    margin-right:100px;
+
+}
+
+.sepetsiparisbtndiv {
+
+    width:100%; 
+    height:60px; 
+    margin-top: 30px;
+
+}
+
+.sepetsiparisbtn {
+
+    width:200px; 
+    height:60px; 
+    color:#ffffff; 
+    background-color:#c78419; 
+    text-align:center; 
+    float:right; 
+    margin-right:100px; 
+    cursor: pointer; 
+    font-size: 18px; 
+    border-radius: 20px;
+
+}
+
+    .sepetsiparisbtn:hover {
+
+        color:#c78419; 
+        background-color:#ffffff; 
+        border:2px solid #c78419;
+
+    }
+
+.sepetsiparisbtnyazi {
+    
+    padding-top:17px;
+
+}
+body {
+    background-image: url('/resimler/1.jpg');
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.menu {
+    background-color: #020101;
+    height: 70px;
+    opacity: 0.8;
+}
+
+.logo {
+    width: 300px;
+    height: 70px;
+    position: relative;
+    float: left;
+    cursor:pointer;
+}
+
+.btn {
+    float: right;
+    padding-top: 9px;
+    overflow: hidden;
+}
+
+.sepetcontainer {
+    background-color: #ffffff;
+    height: 700px;
+    margin-top: 50px;
+}
+
+.sabitleme {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.btn {
+    float: right;
+    padding-top: 9px;
+    overflow: hidden;
+}
+
+.buton {
+    width: 110px;
+    height: 50px;
+    background-color: #020101;
+    border: 1px solid #020101;
+    border-radius: 5px;
+    font-family: Open Sans,sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 38px;
+    transition: all .4s ease-in-out;
+}
+
+.buton:hover {
+        border: none;
+        background-color: #fff;
+        color: #000000;
+        transform: scale(1.1);
+    }
+
+#footer {
+    overflow: hidden;
+    width: 100%;
+    height: 290px;
+    background-color: #fff;
+    margin-top: 250px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    opacity: 0.9;
+}
+
+.smicons {
+    width: 70px;
+    height: 70px;
+    -moz-border-radius: 50%; /*Firefox (-moz-)*/
+    -webkit-border-radius: 50%; /*Chrome ve Safari (-webkit-)*/
+    border-radius: 50%;
+    display: block;
+    margin-right: 20px;
+    text-align: center;
+    color: #fff;
+    transition: all .4s ease-in-out;
+}
+
+.smicons:hover {
+        transform: rotate(360deg);
+        filter: brightness(150%);
+    }
+
+.socialmedia {
+    width: 290px;
+    height: 70px;
+    top: 90px;
+    position: relative;
+    right: 20px;
+    float: none;
+    margin: auto 0 auto auto;
+}
+
+.icon {
+    display: inline-block;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.footericon {
+    margin-top: 65px;
+    margin-left: 1%;
+    float: left;
+}
+
+.smtext {
+    text-align: center;
+    width: 290px;
+    height: 30px;
+    top: 70px;
+    position: relative;
+    right: 20px;
+    float: none;
+    margin: auto 15px auto auto;
+    overflow: hidden;
+}
+
+.socialtext {
+    text-align: center;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.footerbilgi {
+    width: 717px;
+    height: 190px;
+    margin-top: 5px;
+    float: left;
+    margin-left: 20px;
+}
+
+.contact {
+    width: 350px;
+    height: 189px;
+    margin-top: 0.5px;
+    float: left;
+}
+
+.contact1 {
+    float: left;
+    margin-right: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b34444;
+}
+
+.contact2 {
+    float: left;
+    margin-right: 70px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635151;
+}
+
+.contact3 {
+    float: left;
+    margin-right: 70px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635151;
+}
+
+.feedback1 {
+    float: left;
+    margin-right: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b34444;
+}
+
+.feedback2 {
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635151;
+}
+
+.feedback3 {
+    float: left;
+    margin-left: 30px;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635151;
+}
+
+.fpng {
+    width: 40px;
+    height: 40px;
+    margin-top: 14px;
+    margin-right: 7px;
+}
+
+.ipng {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.tpng {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+
+@media all and (max-width:1200px) {
+
+    .feedback {
+        display: none;
+    }
+}
+
+@media all and (max-width:1200px) {
+    .footerbilgi {
+        width: 400px;
+    }
+}
+
+@media all and (max-width:992px) {
+    .footerbilgi {
+        width: 332px;
+    }
+
+    .contact {
+        width: 330px;
+    }
+
+    .sepethazırlanmadiv {
+
+        margin-top:10px;
+}
+}
+
+@media all and (max-width:787px) {
+    .footerbilgi {
+        width: 332px;
+        height: auto;
+        float: none;
+        margin: auto 15px auto auto;
+    }
+
+    .smtext {
+        display: none;
+    }
+
+    .contact {
+        width: 330px;
+        height: 35px;
+        float: right;
+        margin-top: 0;
+    }
+
+    .contact1 {
+        display: none;
+    }
+
+    .contact2 {
+        margin-top: 18px;
+        margin-right: 10px;
+        margin-left: 70px;
+    }
+
+    .contact3 {
+        margin-right: 10px;
+        margin-left: 70px;
+    }
+    body {
+        background-image: url('/resimler/2.jpg') !important;
+             -webkit-background-size: auto;
+             -moz-background-size: auto;
+             -o-background-size: auto;
+             background-size: auto;
+    }
+}
+
+@media all and (max-width:608px) {
+    .sepetbaslikcontainer {
+        display: none;
+    }
+
+    .sepeturuncontainer {
+        width: 100%;
+        height: 168px;
+    }
+
+    .sepeturunlercontainer {
+    width: 100%;
+    margin-top: 20px;
+}
+
+    .sepeturunisim {
+        width: 100%;
+        border-bottom: 1px solid #026;
+    }
+
+    .sepetsiparisbtn {
+
+    width:100%; 
+    float:none; 
+    margin:auto; 
+
+}
+    .sepethazırlanmasure {
+
+    width:100%; 
+    float:none; 
+margin:auto;
+
+}
+
+    .sepeturunmiktar {
+        width: 50%;
+    }
+
+    .sepeturunfiyat {
+        width: 50%;
+    }
+
+    .sepetsilbuton {
+        width: 100%;
+    }
+
+    .sepeturunlertoplamfiyat {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:500px) {
+    .smicons {
+        width: 40px;
+        height: 40px;
+    }
+
+    .fpng {
+        width: 25px;
+        height: 25px;
+        margin-top: 7px;
+        margin-right: 4px;
+    }
+
+    .ipng {
+        width: 25px;
+        height: 25px;
+        margin-top: 7.5px;
+    }
+
+    .tpng {
+        width: 25px;
+        height: 25px;
+        margin-top: 7.5px;
+    }
+
+    .smtext {
+        display: none;
+    }
+
+    .socialmedia {
+        width: 187px;
+        right: 0;
+        top: 120px;
+    }
+
+    .smicons {
+        margin-right: 10px;
+    }
+
+    .menu {
+        height:140px;
+    }
+
+    .btn {
+        float:none;
+        width:100%;
+        margin:auto;
+    }
+}
+
+@media all and (max-width:480px) {
+    .contact {
+        width: 220px;
+        margin-right: 19px;
+    }
+
+    .contact2 {
+        margin-top: 18px;
+        margin-right: 10px;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .contact3 {
+        margin-right: 10px;
+        margin-left: 0;
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width:342px) {
+    .logo {
+        width: 280px;
+    }
+
+    .footericon {
+        margin-right: 20px;
+    }
+}

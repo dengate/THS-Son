@@ -1,0 +1,63 @@
+﻿@using THS.Models;
+
+@{
+    Layout = null;
+    List<sehir> sehirler = ViewData["sehirler"] as List<sehir>;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/js/Yonetici.js"></script>
+    <title>RestoranEkle</title>
+</head>
+<body>
+    <div>İşletme adı</div>
+    <input id="isletmeadi" />
+    <div>Mail</div>
+    <input id="mail" />
+    <div>Adres</div>
+    <input id="adres" />
+    <div>Tipi</div>
+    <input id="tip" />
+    <div>Telefon</div>
+    <input id="telefon" />
+    <div>Masa Sayısı</div>
+    <input id="sayi" />
+    <div>Şifre</div>
+    <input id="sifre" />
+    <div>Güvenlik Türü</div>
+    <select id="scrty">
+        <option value="0">Yok</option>
+        <option value="1">Şifre Doğrulaması</option>
+    </select>
+    <div>Yönetici adı</div>
+    <input id="yoneticiad" />
+    <div>Yönetici Soyadı</div>
+    <input id="yoneticisoyad" />
+        <div class="sehirsec">
+        <p>Şehir</p>
+        <select class="form-control form-control-lg" id="SemtSecim">
+            <option class="gizli" style="display:none; visibility:hidden; opacity:0;">000</option>
+            <option selected id="secili">Şehir..</option>
+            @for (int i = 0; i < sehirler.Count; i++)
+            {                            
+                <option class="gizli" style="display:none; visibility:hidden; opacity:0;">@sehirler[i].Sehir_ID</option>
+                <option>@sehirler[i].Sehir_adi</option>
+            }
+        </select>
+    </div>
+    <div class="isletmesec">
+        <p>Semt</p>
+        <select class="form-control form-control-lg" id="isletmeSecim">
+        </select>
+    </div>
+
+    <button id="ekle">Ekle</button>
+</body>
+</html>

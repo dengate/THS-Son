@@ -1,0 +1,66 @@
+﻿.logo {
+    width: 300px;
+    height: 70px;
+    position: relative;
+    float: left;
+    cursor:pointer;
+    margin-left:15px;
+}
+
+.btn {
+    float: right;
+    padding-top: 9px;
+    overflow: hidden;
+}
+
+.girisbuton {
+    width: 100px;
+    height: 50px;
+    cursor:pointer;
+    background-color: #020101;
+    border: 1px solid #f7f1f1;
+    border-radius: 5px;
+    font-family: Open Sans,sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 38px;
+    transition: all .4s ease-in-out;
+    z-index:15;
+    margin-right:350px;
+}
+
+.menu {
+    background-color: #020101;
+    height: 70px;
+    opacity: 0.8;
+    width:1920px;
+    z-index:5;
+}
+
+
+
+.girisbuton:hover {
+    border: none;
+    background-color: #fff;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+
+.logodiv {
+    width:300px;
+    float:left;
+    height:70px;
+    margin-left:250px;  
+}
+
+.ustmenu {
+    margin-top:-130px;
+    position:fixed;
+    z-index:20;
+}
+body {
+    margin:0px;
+}

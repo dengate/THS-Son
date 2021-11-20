@@ -1,0 +1,211 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa </title>
+    <link rel="shortcut icon" href="/resimler/icon.ico" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link href="~/Scripts/css/Anasayfa.css" rel="stylesheet" />
+</head>
+<body>
+    <main class="site-wrapper">
+  <div class="pt-table desktop-768">
+    <div class="pt-tablecell page-home relative" style="background-image: url('/resimler/restourant.jpg');
+    background-position: center;
+    background-size: cover;">
+                    <div class="overlay"></div>
+                    <a href="/isletme/Random"><div class="rndm">Random</div></a>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                                <div class="page-title  home text-center">
+                                  <span class="heading-page"> Temassız Hizmet Sistemine Hoşgeldiniz
+                                  </span>
+                                    
+                                </div>
+
+                                <div class="hexagon-menu clear">
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="@string.Format("/Restoranlar/GetId?urunadi={0}", ViewBag.restoran)" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="title">Benim Sayfam</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" ><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="/isletme/YemekEkle" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fas fa-cookie"></i>
+                                                </span>
+                                                <span class="title">Ürün Ekle</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" ><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="/isletme/KendiMenu" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fas fa-hamburger"></i>
+                                                </span>
+                                                <span class="title">Hazır Ürün Seç</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" ><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>    
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="/isletme/Menu" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fas fa-pizza-slice"></i>
+                                                </span>
+                                                <span class="title">Kendi Menüm</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" ><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="/isletme/Siparisler" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="title">Sipariş Görüntüleme</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" ><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="/isletme/QrKod" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fa fa-qrcode" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="title">Qr Kod Oluştur</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" ><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="/isletme/Contact" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="title">İletişime Geç</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" ><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="hexagon-item">
+                                    <div class="hex-item">
+<div></div>
+<div></div>
+<div></div>
+</div>
+<div class="hex-item">
+<div></div>
+<div></div>
+<div></div>
+</div>
+<a href="/" class="hex-content">
+<span class="hex-content-inner">
+<span class="icon">
+<i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+</span>
+<span class="title">Çıkış</span>
+</span>
+<svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" ><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+</a>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  </main>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
+</body>
+</html>

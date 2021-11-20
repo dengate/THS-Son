@@ -1,0 +1,263 @@
+﻿html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #f1f1e9;
+    overflow: hidden;
+}
+
+.ustdiv {
+    width: 97%;
+    height: 10%;
+    margin: auto;
+    margin-top: 1%;   
+}
+
+.altdiv {
+    width: 97%;
+    height: 73%;
+    margin: auto;
+    margin-top: 1%;   
+    background-color: #f1f1e9;
+    overflow: auto;
+}
+
+.cksbtn {
+    width: 8%;
+    height: 70%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 0.7%;
+    text-align: center;
+    background-color: #000;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.mstrsys {
+    width: 15%;
+    height: 70%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 0.7%;
+    text-align: center;
+    color: #000;
+}
+
+.ynlbtn {
+    width: 8%;
+    height: 70%;
+    float: right;
+    margin-right: 3%;
+    margin-top: 0.7%;
+    text-align: center;
+    background-color: #1bd106;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.cksbtn:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.ynlbtn:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: #1bd106;
+    border: 1px solid #1bd106;
+}
+
+.ustdivbtns {
+    width: 33%;
+    height: 100%;
+    float: left;
+    margin-left: 0.3%;
+    text-align: center;
+    background-color: #000;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+    .ustdivbtns:hover {
+        background-color: #ffffff;
+        color: #000;
+        border: 1px solid #000;
+    }
+
+.altdivbtns {
+    width: 33%;
+    height: 20%;
+    float: left;
+    margin-left: 0.3%;
+    margin-top: 0.7%;
+    text-align: center;
+    border: 3px solid #941818;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all ease-in-out .3s;
+}
+
+.saat {
+    float: right;
+    width: 8%;
+    height: 70%;
+    margin-right: 3%;
+    margin-top: 0.5%;
+    background-color: #ffffff;
+}
+
+.altdivbtnsol {
+    float: left;
+    margin-left: 4%;
+    width: 20%;
+    height: 90%;
+    margin-top: 1%;
+}
+
+.altdivbtnsag {
+    float: left;
+    margin-left: 4%;
+    width: 70%;
+    height: 90%;
+    margin-top: 1%;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.altdivbtnsolust {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.altdivbtnsolalt {
+    height: 80%;
+    width: 100%;
+    font-size: 60px;
+    background-color: #999e9e;
+    color: #000;
+    text-align: center;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.altdivbtnsagust {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px dashed;
+}
+
+.altdivbtnsagalt {
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    word-break:break-all;
+    overflow: auto;
+    font-size: 18px;
+}
+
+.ustdivbtnsyazi {
+    font-size: 23px;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.modal1 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99999999;
+}
+
+#masa-box {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    opacity: 1;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px #CBCDD3;
+}
+
+.carpi {
+    width: 480px;
+    height: 30px;
+    margin-top: 0;
+}
+
+.close {
+    float: right;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.close:hover {
+    color: #06D85F;
+}
+
+
+.popupbtns {
+    width:100%; 
+    height:70px; 
+    margin-top:25px;
+}
+.popupbtnsil {
+    cursor:pointer; 
+    height:100%; 
+    width:150px; 
+    margin-left:25px;
+    margin-right:50px; 
+    background-color:#f22e2e; 
+    color:#ffffff; 
+    border-radius:10px;
+    float: left;
+    text-align: center;
+    font-size: 45px;
+    transition: all ease-in-out .3s;
+}
+.popupbtnshazir {
+    cursor:pointer; 
+    height:100%; 
+    width:250px;
+    background-color:#ffd800; 
+    color:#ffffff;
+    border-radius:10px; 
+    float: left;
+    text-align: center;
+    font-size: 45px;
+    transition: all ease-in-out .3s;
+}
+.popupbtnsil:hover {
+    background-color:#ffffff; 
+    color:#f22e2e; 
+    border:2px solid #f22e2e;
+}
+.popupbtnshazir:hover {
+    background-color:#ffffff; 
+    color:#ffd800;
+    border:2px solid #ffd800;
+}

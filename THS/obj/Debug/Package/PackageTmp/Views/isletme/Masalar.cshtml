@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Masalar";
+    Layout = "~/Views/Shared/KontrolLayout.cshtml";
+}
+
+@foreach (var item in ViewBag.Masalar)
+{
+    if (item.Masa_bosmu == false)
+    {
+    <div class="altdivbtns" style="cursor: default !important; background-color: #00a000; border:none !important; width: 19.5% !important; height: 18% !important;">
+        <div class="altdivbtnsol" style="float: none !important; margin: auto; margin-top: 1%; width: 25% !important;">
+            <div class="altdivbtnsolust">Masa</div>
+            <div class="altdivbtnsolalt">@item.Masa_numarasi</div>
+        </div>
+    </div>
+    }
+    else
+    {
+    <div class="altdivbtns" style="cursor: default !important; background-color: #c51616; border:none !important; width: 19.5% !important; height: 18% !important;">
+        <div class="altdivbtnsol" style="float: none !important; margin: auto; margin-top: 1%; width: 25% !important;">
+            <div class="altdivbtnsolust">Masa</div>
+            <div class="altdivbtnsolalt">@item.Masa_numarasi</div>
+        </div>
+    </div>
+    }
+
+}

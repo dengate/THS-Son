@@ -1,0 +1,145 @@
+﻿@{
+    ViewBag.Title = "KullanıcıGırısIndex";
+    Layout = "~/Views/Shared/KullanıcıGirisLayout.cshtml";
+}
+
+
+
+ <div class="container-fluid menu" >
+
+    <div class="container">
+     
+        <div class="logodiv"><img class="logo" src="~/resimler/logo5.png" /></div>
+         
+        <div><a class="btn" id="girisbuton" style="opacity:1;" href="/isletme/Giris/"><button class="girisbuton">Giriş</button></a></div>
+        <div><a class="btn2" id="bilgi" style="opacity:1;"><button class="girisbuton">Tıkla!</button></a></div>
+
+    </div>
+
+        
+ </div>
+
+<div class="container" >
+             <div class="text-center">
+            <span class="head">Lütfen Şehrinizi seçiniz.</span>
+                 </div>
+        </div>
+
+    <div class="container" > 
+        <div class="sehirlerContainer" style="padding-top:30px; padding-left:8px;"> 
+<a class="sehirbtn"   href="/Sehirler/GetId?plaka=1éAdana"> <div class="sehirContainer"> <span class="plaka">01</span> </div> <span class="isim">Adana</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=2éAdiyaman"> <div class="sehirContainer"> <span class="plaka">02</span> </div> <span class="isim">Adıyaman</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=4éAgri"> <div class="sehirContainer"> <span class="plaka">04</span> </div> <span class="isim">Ağrı</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=5éAmasya"> <div class="sehirContainer"> <span class="plaka">05</span> </div> <span class="isim">Amasya</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=6éAnkara"> <div class="sehirContainer"> <span class="plaka">06</span> </div> <span class="isim">Ankara</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=7éAntalya"> <div class="sehirContainer"> <span class="plaka">07</span> </div> <span class="isim">Antalya</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=9éAydin"> <div class="sehirContainer"> <span class="plaka">09</span> </div> <span class="isim">Aydın</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=10éBalikesir"> <div class="sehirContainer"> <span class="plaka">10</span> </div> <span class="isim">Balıkesir</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=11éBilecik"> <div class="sehirContainer"> <span class="plaka">11</span> </div> <span class="isim">Bilecik</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=12éBingol"> <div class="sehirContainer"> <span class="plaka">12</span> </div> <span class="isim">Bingöl</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=14éBolu"> <div class="sehirContainer"> <span class="plaka">14</span> </div> <span class="isim">Bolu</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=15éBurdur"> <div class="sehirContainer"> <span class="plaka">15</span> </div> <span class="isim">Burdur</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=16éBursa"> <div class="sehirContainer"> <span class="plaka">16</span> </div> <span class="isim">Bursa</span></a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=17éCanakkale"> <div class="sehirContainer"> <span class="plaka">17</span> </div> <span class="isim">Çanakkale</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=18éCankiri"> <div class="sehirContainer"> <span class="plaka">18</span> </div> <span class="isim">Çankırı</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=19éCorum"> <div class="sehirContainer"> <span class="plaka">19</span> </div> <span class="isim">Çorum</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=20éDenizli"> <div class="sehirContainer"> <span class="plaka">20</span> </div> <span class="isim">Denizli</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=21éDiyarbakir"> <div class="sehirContainer"> <span class="plaka">21</span> </div> <span class="isim">Diyarbakır</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=22éEdirne"> <div class="sehirContainer"> <span class="plaka">22</span> </div> <span class="isim">Edirne</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=23éElazig"> <div class="sehirContainer"> <span class="plaka">23</span> </div> <span class="isim">Elazığ</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=24éErzincan"> <div class="sehirContainer"> <span class="plaka">24</span> </div> <span class="isim">Erzincan</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=25éErzurum"> <div class="sehirContainer"> <span class="plaka">25</span> </div> <span class="isim">Erzurum</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=26éEskisehir"> <div class="sehirContainer"> <span class="plaka">26</span> </div> <span class="isim">Eskişehir</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=27éGaziantep"> <div class="sehirContainer"> <span class="plaka">27</span> </div> <span class="isim">Gaziantep</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=28éGiresun"> <div class="sehirContainer"> <span class="plaka">28</span> </div> <span class="isim">Giresun</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=31éHatay"> <div class="sehirContainer"> <span class="plaka">31</span> </div> <span class="isim">Hatay</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=32éİsparta"> <div class="sehirContainer"> <span class="plaka">32</span> </div> <span class="isim">Isparta</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=33éMersin"> <div class="sehirContainer"> <span class="plaka">33</span> </div> <span class="isim">Mersin</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=34éİstanbul"> <div class="sehirContainer"> <span class="plaka">34</span> </div> <span class="isim">İstanbul</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=35éİzmir"> <div class="sehirContainer"> <span class="plaka">35</span> </div> <span class="isim">İzmir</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=37éKastamonu"> <div class="sehirContainer"> <span class="plaka">37</span> </div> <span class="isim">Kastamonu</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=38éKayseri"> <div class="sehirContainer"> <span class="plaka">38</span> </div> <span class="isim">Kayseri</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=39éKirklareli"> <div class="sehirContainer"> <span class="plaka">39</span> </div> <span class="isim">Kırklareli</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=40éKirsehir"> <div class="sehirContainer"> <span class="plaka">40</span> </div> <span class="isim">Kırşehir</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=41éKocaeli"> <div class="sehirContainer"> <span class="plaka">41</span> </div> <span class="isim">Kocaeli</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=42éKonya"> <div class="sehirContainer"> <span class="plaka">42</span> </div> <span class="isim">Konya</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=43éKutahya"> <div class="sehirContainer"> <span class="plaka">43</span> </div> <span class="isim">Kütahya</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=44éMalatya"> <div class="sehirContainer"> <span class="plaka">44</span> </div> <span class="isim">Malatya</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=45éManisa"> <div class="sehirContainer"> <span class="plaka">45</span> </div> <span class="isim">Manisa</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=45éKahramanMaras"> <div class="sehirContainer"> <span class="plaka">46</span> </div> <span class="isim">Maraş</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=47éMardin"> <div class="sehirContainer"> <span class="plaka">47</span> </div> <span class="isim">Mardin</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=48éMugla"> <div class="sehirContainer"> <span class="plaka">48</span> </div> <span class="isim">Muğla</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=50éNevsehir"> <div class="sehirContainer"> <span class="plaka">50</span> </div> <span class="isim">Nevşehir</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=51éNigde"> <div class="sehirContainer"> <span class="plaka">51</span> </div> <span class="isim">Niğde</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=52éOrdu"> <div class="sehirContainer"> <span class="plaka">52</span> </div> <span class="isim">Ordu</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=53éRize"> <div class="sehirContainer"> <span class="plaka">53</span> </div> <span class="isim">Rize</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=54éSakarya"> <div class="sehirContainer"> <span class="plaka">54</span> </div> <span class="isim">Sakarya</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=55éSamsun"> <div class="sehirContainer"> <span class="plaka">55</span> </div> <span class="isim">Samsun</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=56éSiirt"> <div class="sehirContainer"> <span class="plaka">56</span> </div> <span class="isim">Siirt</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=57éSinop"> <div class="sehirContainer"> <span class="plaka">57</span> </div> <span class="isim">Sinop</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=58éSivas"> <div class="sehirContainer"> <span class="plaka">58</span> </div> <span class="isim">Sivas</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=59éTekirdag"> <div class="sehirContainer"> <span class="plaka">59</span> </div> <span class="isim">Tekirdağ</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=60éTokat"> <div class="sehirContainer"> <span class="plaka">60</span> </div> <span class="isim">Tokat</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=61éTrabzon"> <div class="sehirContainer"> <span class="plaka">61</span> </div> <span class="isim">Trabzon</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=63éSanliurfa"> <div class="sehirContainer"> <span class="plaka">63</span> </div> <span class="isim">Şanlıurfa</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=64éUsak"> <div class="sehirContainer"> <span class="plaka">64</span> </div> <span class="isim">Uşak</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=65éVan"> <div class="sehirContainer"> <span class="plaka">65</span> </div> <span class="isim">Van</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=66éYozgat"> <div class="sehirContainer"> <span class="plaka">66</span> </div> <span class="isim">Yozgat</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=67éZonguldak"> <div class="sehirContainer"> <span class="plaka">67</span> </div> <span class="isim">Zonguldak</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=68éAksaray"> <div class="sehirContainer"> <span class="plaka">68</span> </div> <span class="isim">Aksaray</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=70éKaraman"> <div class="sehirContainer"> <span class="plaka">70</span> </div> <span class="isim">Karaman</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=71éKirikkale"> <div class="sehirContainer"> <span class="plaka">71</span> </div> <span class="isim">Kırıkkale</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=72éBatman"> <div class="sehirContainer"> <span class="plaka">72</span> </div> <span class="isim">Batman</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=74éBartin"> <div class="sehirContainer"> <span class="plaka">74</span> </div> <span class="isim">Bartın</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=76éİgdir"> <div class="sehirContainer"> <span class="plaka">76</span> </div> <span class="isim">Iğdır</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=77éYalova"> <div class="sehirContainer"> <span class="plaka">77</span> </div> <span class="isim">Yalova</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=78éKarabuk"> <div class="sehirContainer"> <span class="plaka">78</span> </div> <span class="isim">Karabük</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=80éOsmaniye"> <div class="sehirContainer"> <span class="plaka">80</span> </div> <span class="isim">Osmaniye</span> </a>
+<a class="sehirbtn  " href="/Sehirler/GetId?plaka=81éDuzce"> <div class="sehirContainer"> <span class="plaka">81</span> </div> <span class="isim">Düzce</span> </a>
+
+            </div>
+        </div>
+
+<div class="container-fluid" id="footer">
+    <footer>
+        <div class="container" style="height:200px; margin-top:45px; overflow:hidden;">
+            <div class="footericon">
+                <img src="~/resimler/logo6.png" width="70px"; height="70px;"/>
+            </div>
+            <div class="footerbilgi">
+                <div class="contact">
+                    <div class="contact1">İletişim</div>
+                   <div class="contact2">E-mail: aehapdaeog@gmail.com</div>
+                    <div class="contact3">Telefon: 05079647410</div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback1">Feedback</div>
+                    <div class="feedback2">Lütfen fikirlerinizi, hata raporlarınızı,</div>
+                    <div class="feedback3">önerilerinizi bize gönderin!</div>
+                    <div class="feedback3">Herhangi bir geri bildirim</div>
+                    <div class="feedback3">bizim için çok değerlidir.</div>
+                </div>
+            </div>
+            <div class="smtext"><span class="socialtext">Bizi takip edin:</span></div>
+            <div class="socialmedia">   
+                 <a class="icon" href="https://www.facebook.com/Temass%C4%B1z-Hizmet-Sistemi-101024968756392"><div class="smicons" style="background-color:#3d5892"><img class="fpng" src="~/resimler/facebook.png"  /></div></a>
+                 <a class="icon" href="https://www.instagram.com/temassizhizmetsistemi/?hl=tr"><div class="smicons" style="background-color:#993c90"><img class="ipng" src="~/resimler/instagram.png"  /></div></a>
+                 <a class="icon" href="https://twitter.com/TemassizS?s=20"><div class="smicons" style="background-color:#26a0ec"><img class="tpng" src="~/resimler/twitter.jpg"  /></div></a>
+            </div>       
+        </div>
+    </footer>
+</div>
+
+<div id="myModal" class="modal1">
+
+    <div id="success-box">
+        <div class="carpi"><a class="close">&times;</a></div>
+    <div class="emoji">
+        <img style="width:300px; height:250px;" src="~/resimler/qr.jpeg" />
+    </div>
+        <div class="mesaj"><span>Qr kodu okutarak müşteri girişi yapıp sipariş verebilirsiniz.</span></div>
+        <div class="mesaj"><span>Yalnızca Ankara-Çayyolu, Ankara-Kızılay ve İzmir-Alaçatı da restoranlar bulunmaktadır.</span></div>
+
+    
+        </div>
+    </div>

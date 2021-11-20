@@ -1,0 +1,222 @@
+﻿ .containers2 {
+            width: 80%;
+            margin: 8em auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 330px;
+            border-radius: 20px;
+            padding: 35px;
+            margin: 1.2em 0;
+            background: #FFFFFF;
+            border: 3px solid #b5b5b5;
+            border-radius: 35px;
+        }
+
+            .card:hover {
+                border: 3px solid #ee1b98;
+                box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+            }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .header .title .name {
+                font-size: 1.8em;
+                font-weight: bold;
+            }
+
+            .header .price {
+                margin: auto;
+                text-align: center;
+                font-weight: 400;
+            }
+
+                .header .price span {
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+        .img {
+            margin: 3em auto;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+            height: 130px;
+        }
+
+            .img img {
+                margin-top: -50px;
+                width: 150px;
+                left: 0;
+                right: 0;
+                min-height: 200px;
+                min-width: 200px;
+                max-width: 200px;
+                max-height: 200px;
+            }
+
+        .amount {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .amount h4 {
+                font-size: 1em;
+                padding: 8px 0;
+            }
+
+            .amount .count {
+                display: flex;
+                background: rgba(255, 254, 254, 0.4);
+                padding: 0 5px;
+                border-radius: 20px;
+            }
+
+                .amount .count button {
+                    width: 30px;
+                    background: white;
+                    text-align: center;
+                    height: 30px;
+                    border-radius: 50%;
+                    padding: 3px;
+                    font-weight: bolder;
+                    border: none;
+                    margin: auto;
+                    font-size: 1em;
+                }
+
+                .amount .count input {
+                    margin: auto 10px;
+                    font-weight: 700;
+                    width: 30px;
+                    text-align: center;
+                    border: none;
+                    font-size: 1.1em;
+                    border-radius: 5px;
+                }
+
+        .foot-card {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+            .foot-card button {
+                width: 75%;
+                border-radius: 30px;
+                border: none;
+                padding: 0.6em;
+                background: white;
+                transition: all 0.2s;
+                background: #c2f1d6;
+                margin-left: 15%;
+                margin-right: auto;
+            }
+
+                .foot-card button:hover {
+                    background: #ee1b98;
+                    color: white;
+                }
+
+            .foot-card .save {
+                margin: auto 0;
+            }
+
+        .price {
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .box {
+            width: 40%;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 35px;
+            border: 2px solid #fff;
+            border-radius: 20px/50px;
+            background-clip: padding-box;
+            text-align: center;
+        }
+
+        .button {
+            font-size: 1em;
+            padding: 10px;
+            color: #ee1b98;
+            border: 2px solid #ee1b98;
+            border-radius: 20px/50px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 2;
+        }
+
+            .overlay:target {
+                visibility: visible;
+                opacity: 1;
+            }
+
+        .popup {
+            margin: 70px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            width: 30%;
+            position: relative;
+            transition: all 5s ease-in-out;
+        }
+
+            .popup h2 {
+                text-align: center;
+                margin-top: 0;
+                color: #333;
+                font-family: Tahoma, Arial, sans-serif;
+            }
+
+            .popup .close {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                transition: all 200ms;
+                font-size: 30px;
+                font-weight: bold;
+                text-decoration: none;
+                color: #333;
+            }
+
+        .card .close {
+            float: right;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .popup .close:hover {
+            color: #06d85f;
+        }
+
+        .popup .content {
+            max-height: 30%;
+            overflow: auto;
+        }

@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Kontrol</title>
+    <style>
+        .giris {
+            top: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -120px;
+    margin-top: -19.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="giris">
+          <form action="/Restoranlar/Onay" method="post" enctype="multipart/form-data">
+    <div>
+        Ekranda Gördüğünüz Kodu Giriniz
+    </div>
+        <input id="kod" name="kod" type="text" />
+        <button id="onayla">Onayla</button>
+              </form>
+        </div>
+</body>
+</html>

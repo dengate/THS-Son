@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "YemekEkle";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Menü</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/Scripts/css/arda.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form action="/isletme/YemekEkle" method="post" enctype="multipart/form-data" class="contact100-form validate-form  onsubmit="return onay(this)">
+				<span class="contact100-form-title">
+					Ürün Ekleyin
+				</span>
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100">
+					<span class="label-input100">Ürün Adı</span>
+					<input class="input100" type="text" id="ad" name="ad" placeholder="Ürün Adı" required>
+				</div>
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Ürün fiyatı</span>
+					<input class="input100" type="number" id="fiyat" name="fiyat" placeholder="Fiyat"required> 
+				</div>
+
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100">
+					<span class="label-input100">Ürün Açıklması</span>
+					<input class="input100" type="text" id="aciklama" name="aciklama" placeholder="Açıklama" required>
+				</div>
+
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100">
+					<span class="label-input100">Ürün Kalorisi</span>
+					<input class="input100" type="number" id="kalori" name="kalori" placeholder="Kalori" >
+				</div>
+				<div class="wrap-input100 bg1 rs1-wrap-input100 ">
+					<span class="label-input100">Ürün Pişme Süresi</span>
+					<input class="input100" type="number" id="sure" name="sure" placeholder="Pişme Süresi" >
+				</div>
+                    <select class="wrap-input100 validate-input bg1 rs1-wrap-input100" name="KategoriSecim" id="KategoriSecim">
+                        <option class="gizli" style="display: none; visibility: hidden; opacity: 0;">000</option>
+                        <option selected id="secili">Alt Kategori</option>
+                        @for (int i = 0; i < ViewBag.alt1.Count; i++)
+                        {
+                            <option class="gizli" style="display: none; visibility: hidden; opacity: 0;">@ViewBag.alt1[i].id</option>
+                            <option>@ViewBag.alt1[i].isim</option>
+                        }
+                    </select>
+          
+                <div class="wrap-input100 validate-input bg1">
+					<center>
+					<span class="label-input100">Resim Ekle</span>
+					<input type="file" id="myfile" name="myfile">
+					</center>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn" id="onayla"> 
+						<span>
+							Ekle
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+        <script>
+            function onay() {
+
+                alert("Başarıyla Kaydedildi");
+                return true;
+
+            }
+    </script>
+
+</body>
+</html>
+

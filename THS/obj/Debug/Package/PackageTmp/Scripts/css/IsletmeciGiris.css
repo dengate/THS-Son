@@ -1,0 +1,59 @@
+﻿.giris-container{
+    margin-top: 10%;
+    width:35%;
+}
+
+.giris-form{
+    padding: 9%;
+    opacity:0.95;
+    border-radius: 15px;
+    background: #b49b7a;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.giris-form h3{
+    text-align: center;
+    margin-bottom:12%;
+    color: #fff;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.btnSubmit{
+    font-weight: 600;
+    width: 50%;
+    color: #282726;
+    cursor:pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
+    transition: all .4s ease-in-out;
+}
+
+.btnSubmit:hover{
+    background-color:#921d1d;
+    color:#ffffff;
+}
+
+.btnForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.btnForgetPwd:hover{
+    text-decoration:none;
+    color:#fff;
+}
+
+ body {
+          background-image:url('/resimler/restoran2.jpg');
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }

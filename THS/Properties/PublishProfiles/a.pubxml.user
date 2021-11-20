@@ -1,0 +1,1783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Ahmet\Desktop\web</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AnasayfaCss/Anasayfa.css">
+      <publishTime>05/08/2021 16:13:35</publishTime>
+    </File>
+    <File Include="AnasayfaCss/QrKod.css">
+      <publishTime>05/08/2021 16:41:15</publishTime>
+    </File>
+    <File Include="ardacss/main.css">
+      <publishTime>03/26/2021 21:15:42</publishTime>
+    </File>
+    <File Include="ardacss/util.css">
+      <publishTime>03/26/2021 21:11:02</publishTime>
+    </File>
+    <File Include="ardajs/animate/animate.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/animsition/css/animsition.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/animsition/css/animsition.min.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/animsition/js/animsition.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/animsition/js/animsition.min.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/css/bootstrap-grid.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/css/bootstrap-grid.css.map">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/css/bootstrap-grid.min.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/css/bootstrap-grid.min.css.map">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/css/bootstrap-reboot.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/css/bootstrap-reboot.css.map">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/css/bootstrap-reboot.min.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/css/bootstrap-reboot.min.css.map">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/css/bootstrap.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/css/bootstrap.css.map">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/css/bootstrap.min.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/css/bootstrap.min.css.map">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/js/bootstrap.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/js/bootstrap.min.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/js/popper.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/js/popper.min.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/bootstrap/js/tooltip.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/countdowntime/countdowntime.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/css-hamburgers/hamburgers.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/css-hamburgers/hamburgers.min.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/daterangepicker/daterangepicker.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/daterangepicker/daterangepicker.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/daterangepicker/moment.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/daterangepicker/moment.min.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/jquery/jquery-3.2.1.min.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/main.js">
+      <publishTime>03/26/2021 21:09:33</publishTime>
+    </File>
+    <File Include="ardajs/perfect-scrollbar/perfect-scrollbar.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/perfect-scrollbar/perfect-scrollbar.min.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/select2/select2.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/select2/select2.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/select2/select2.min.css">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="ardajs/select2/select2.min.js">
+      <publishTime>03/26/2021 21:04:30</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>11/19/2021 23:36:07</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>11/19/2021 23:36:06</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/02/2021 13:11:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>06/02/2021 13:11:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>06/02/2021 13:11:07</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/02/2021 13:11:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>06/02/2021 13:11:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>06/02/2021 13:11:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>06/02/2021 13:11:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>06/02/2021 13:11:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>06/02/2021 13:11:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>06/02/2021 13:11:07</publishTime>
+    </File>
+    <File Include="bin/THS.dll">
+      <publishTime>11/19/2021 23:02:15</publishTime>
+    </File>
+    <File Include="bin/THS.pdb">
+      <publishTime>11/19/2021 23:02:15</publishTime>
+    </File>
+    <File Include="bosfoti/tik.png">
+      <publishTime>04/23/2021 14:40:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css.map">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css.map">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css.map">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css.map">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery-ui.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.accordion.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.all.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.autocomplete.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.base.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.button.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.core.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.datepicker.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.dialog.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.progressbar.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.resizable.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.selectable.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.slider.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.tabs.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.theme.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_222222_256x240.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_454545_256x240.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_888888_256x240.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery-ui.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.accordion.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.autocomplete.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.button.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.core.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.datepicker.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.dialog.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.progressbar.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.resizable.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.selectable.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.slider.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.tabs.min.css">
+      <publishTime>03/18/2021 17:34:26</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.theme.min.css">
+      <publishTime>03/18/2021 17:34:27</publishTime>
+    </File>
+    <File Include="Fotograflar/adana-kebap.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/adana.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-6li-chicken-tenders-menu.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-6li-tavuk-kanatlari-menu.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-algida-maras-cup-105ml-dondurma-ca4c.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-applepie.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-besiktas-kral-burger-taraftar-menu.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-bk-steakhouse-burger-menu.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-cay.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-chicken-royale.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-cola.jfif">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-dondurma.jfif">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-double-king-chicken-menu.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-double-kofteburger-1.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-double-whopper-1.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-fanta.jfif">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-ketcap.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-king-delight-akdeniz-salata-1.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-king-delight-ton-salata.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-kralikili.jfif">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-mayonez.jfif">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-ranch.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-sogan-halkasi.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-sprite.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-trabzonspor-kral-burger-taraftar-menu.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-visneli-tatli.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-BurgerKing-whopper-menu-1.png">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-ahududulu.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-americano.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-brownie.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-caffemocha.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-CaramelFrappuccino.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-caramelmacchiato.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-fiesta.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-freshfilter.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-Gingerbread.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-hazelnutsignature.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-hotsignature.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-icedamericano.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-icedcaramel.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-icedLatte.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-icedwhitecmocha.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-Latte.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-limonlu.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-mistik.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-misto.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-signature.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-WhitecmFrappuccino.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Kızılay-Starbucks-whitecmocha.jpeg">
+      <publishTime>05/03/2021 22:04:15</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-AcıbademliSeftaliTatli.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-AdanaKebap.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-AyvaTatli.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-BeyazPeynirSandvic.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Bira.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Cay.jfif">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Cay.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-CheeseBurger.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Cola.jpeg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-DanaBaconBurger.jfif">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-DanaBaconBurger.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Domates.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-EtDurum.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Ezogelin.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Fanta.jpeg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-FirindaSutlac.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Gazoz.jpg">
+      <publishTime>03/18/2021 17:35:04</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Guvec.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-HamsiBugulama.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Ispanak.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-KahvaltiTabagi.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Kahve.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-KarisikHelva.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-KarisikKumpir.jfif">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-KarisikKumpir.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-KarisikPizza.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Kavurma.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-KitirTavukluKumpir.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-KıtırTavukluKumpir.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-MarasDondurma.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-PepperoniPizza.jfif">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Pirzola.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Raki.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Salep.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-SarayHelva.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-SucukluSosisliKumpir.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Tarhana.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-TavukBurger.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-TavukDurum.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-TavukluPizza.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Trilece.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/Ankara-Çayyolu-BizimRestoran-Viski.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/asure.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/beyti.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/Bizimrestoran.jpg">
+      <publishTime>03/18/2021 17:35:05</publishTime>
+    </File>
+    <File Include="Fotograflar/fanta.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/Gazoz.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/Gazoz.png">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/hamburger.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/iskender.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-cevizlimidyebaklava.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-ekler.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-Fistiklibaklava.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-fistiklikadayif.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-frambuazlitrilece.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-halkatatlisi.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-hayrabolutatlisi.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-karamellitrilece.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-ozelfistiklibaklava.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-sadecikolatalifistiklimaras.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-sadecikolatalimaraskesme.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-sademarasdondurma.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/Izmir-Alacati-BizimTatlici-sutlunuriye.jpeg">
+      <publishTime>05/08/2021 18:38:58</publishTime>
+    </File>
+    <File Include="Fotograflar/kadayif.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/kadayifli-muhallebi.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/kazandibi.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/kellepaca.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/kola.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/kumpir.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/merco.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/pizza.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="Fotograflar/tavuksuyu.jpg">
+      <publishTime>05/08/2021 16:57:38</publishTime>
+    </File>
+    <File Include="JS/jquery-3.2.1.min.js">
+      <publishTime>03/26/2021 18:02:16</publishTime>
+    </File>
+    <File Include="JS/main.js">
+      <publishTime>03/26/2021 18:02:01</publishTime>
+    </File>
+    <File Include="Models/Model1.edmx.diagram">
+      <publishTime>07/28/2021 19:36:52</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/02/2021 13:11:09</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>11/19/2021 23:36:03</publishTime>
+    </File>
+    <File Include="QrKod/1.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="QrKod/10.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="QrKod/11.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="QrKod/2.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="QrKod/3.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="QrKod/4.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="QrKod/5.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="QrKod/6.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="QrKod/7.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="QrKod/8.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="QrKod/9.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="resimler/1.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="resimler/10.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="resimler/11.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="resimler/2.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="resimler/3.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="resimler/4.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="resimler/5.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="resimler/6.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="resimler/7.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="resimler/8.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="resimler/9.png">
+      <publishTime>05/08/2021 16:42:57</publishTime>
+    </File>
+    <File Include="resimler/arda.jpg">
+      <publishTime>03/07/2021 20:32:22</publishTime>
+    </File>
+    <File Include="resimler/ARDA.png">
+      <publishTime>03/19/2021 15:05:44</publishTime>
+    </File>
+    <File Include="resimler/big-king-ailesi-genisledi.jpg">
+      <publishTime>03/18/2021 17:34:54</publishTime>
+    </File>
+    <File Include="resimler/Bizimrestoran.jpg">
+      <publishTime>03/18/2021 17:34:54</publishTime>
+    </File>
+    <File Include="resimler/facebook.png">
+      <publishTime>03/18/2021 17:34:54</publishTime>
+    </File>
+    <File Include="resimler/instagram.png">
+      <publishTime>03/18/2021 17:34:54</publishTime>
+    </File>
+    <File Include="resimler/isletme arka plan.jpg">
+      <publishTime>03/18/2021 17:34:54</publishTime>
+    </File>
+    <File Include="resimler/Izgara Köfte.png">
+      <publishTime>03/25/2021 15:50:29</publishTime>
+    </File>
+    <File Include="resimler/kutlama-kovasi-ve-twister-desktop-tr1.jpg">
+      <publishTime>03/18/2021 17:34:54</publishTime>
+    </File>
+    <File Include="resimler/logo5.png">
+      <publishTime>05/04/2021 10:31:29</publishTime>
+    </File>
+    <File Include="resimler/logo6.png">
+      <publishTime>03/18/2021 17:34:54</publishTime>
+    </File>
+    <File Include="resimler/menubutonresmi.jpg">
+      <publishTime>03/18/2021 17:34:54</publishTime>
+    </File>
+    <File Include="resimler/odemebutonresmi.jpg">
+      <publishTime>03/18/2021 17:34:54</publishTime>
+    </File>
+    <File Include="resimler/pizza-hut-kopia.png">
+      <publishTime>03/18/2021 17:34:54</publishTime>
+    </File>
+    <File Include="resimler/qr.jpeg">
+      <publishTime>11/19/2021 22:58:55</publishTime>
+    </File>
+    <File Include="resimler/restoran.jpg">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/restoran2.jpg">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/restoran3.jpg">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/restourant.jpg">
+      <publishTime>03/27/2021 03:38:46</publishTime>
+    </File>
+    <File Include="resimler/sehirsecimarkaplan.jpg">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/sepetarkaplan.jpg">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/siyah.jpg">
+      <publishTime>03/20/2021 18:22:40</publishTime>
+    </File>
+    <File Include="resimler/thumb-1920-1093443.jpg">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/twitter.jpg">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/yanyanaseffaf.png">
+      <publishTime>04/27/2021 12:22:00</publishTime>
+    </File>
+    <File Include="resimler/yemek.jpg">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/yemek2.jpg">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/yemek4.jpg">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/yemek5.jpg">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/yemek7.jpg">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/yeni.png">
+      <publishTime>05/01/2021 21:13:55</publishTime>
+    </File>
+    <File Include="resimler/yorum1.png">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/yorum2.png">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="resimler/yorum3.png">
+      <publishTime>03/18/2021 17:34:55</publishTime>
+    </File>
+    <File Include="restfoto/restourant.jpg">
+      <publishTime>03/27/2021 03:38:46</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js">
+      <publishTime>03/18/2021 17:34:34</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js.map">
+      <publishTime>03/18/2021 17:34:34</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js">
+      <publishTime>03/18/2021 17:34:34</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js.map">
+      <publishTime>03/18/2021 17:34:34</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>03/18/2021 17:34:34</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js.map">
+      <publishTime>03/18/2021 17:34:34</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js.map">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/css/Anasayfa.css">
+      <publishTime>06/03/2021 12:37:40</publishTime>
+    </File>
+    <File Include="Scripts/css/animate.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/arda.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/bg.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/bootstrap.min.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/font-awesome.min.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/foto.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/giris.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/isletme.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/IsletmeciGiris.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/isletmemenu.css">
+      <publishTime>06/12/2021 20:15:23</publishTime>
+    </File>
+    <File Include="Scripts/css/kullanicigiris.css">
+      <publishTime>11/19/2021 23:34:14</publishTime>
+    </File>
+    <File Include="Scripts/css/Loader.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/main.css">
+      <publishTime>05/08/2021 16:25:37</publishTime>
+    </File>
+    <File Include="Scripts/css/Menu.css">
+      <publishTime>11/19/2021 23:09:13</publishTime>
+    </File>
+    <File Include="Scripts/css/Menu2.css">
+      <publishTime>11/19/2021 23:34:13</publishTime>
+    </File>
+    <File Include="Scripts/css/menucubuk.css">
+      <publishTime>05/08/2021 16:23:03</publishTime>
+    </File>
+    <File Include="Scripts/css/Page.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/Popup.css">
+      <publishTime>11/19/2021 23:05:25</publishTime>
+    </File>
+    <File Include="Scripts/css/QrKod.css">
+      <publishTime>05/08/2021 16:41:15</publishTime>
+    </File>
+    <File Include="Scripts/css/rez.css">
+      <publishTime>05/04/2021 10:19:14</publishTime>
+    </File>
+    <File Include="Scripts/css/rez2.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/Sepet.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/Style.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/css/Urun.css">
+      <publishTime>07/28/2021 19:29:31</publishTime>
+    </File>
+    <File Include="Scripts/css/ustmenu.css">
+      <publishTime>06/12/2021 19:21:53</publishTime>
+    </File>
+    <File Include="Scripts/css/util.css">
+      <publishTime>05/03/2021 19:09:47</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.js.map">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.min.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.min.js.map">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.js.map">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.min.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.min.js.map">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/index.d.ts">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/index.js.flow">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.0.0.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.0.0.min.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.0.0.min.map">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.0.0.slim.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.0.0.slim.min.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.0.0.slim.min.map">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.6.0.js">
+      <publishTime>06/02/2021 13:11:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.6.0.min.js">
+      <publishTime>06/02/2021 13:11:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.6.0.min.map">
+      <publishTime>06/02/2021 13:11:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.6.0.slim.js">
+      <publishTime>06/02/2021 13:11:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.6.0.slim.min.js">
+      <publishTime>06/02/2021 13:11:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.6.0.slim.min.map">
+      <publishTime>06/02/2021 13:11:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.24.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.24.min.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/js/isletmemenu.js">
+      <publishTime>06/12/2021 21:22:56</publishTime>
+    </File>
+    <File Include="Scripts/js/jquery-3.2.1.min.js">
+      <publishTime>03/26/2021 18:02:16</publishTime>
+    </File>
+    <File Include="Scripts/js/KayanMenu.js">
+      <publishTime>05/03/2021 11:04:00</publishTime>
+    </File>
+    <File Include="Scripts/js/Logo.js">
+      <publishTime>06/02/2021 12:45:15</publishTime>
+    </File>
+    <File Include="Scripts/js/main.js">
+      <publishTime>03/26/2021 18:02:01</publishTime>
+    </File>
+    <File Include="Scripts/js/Menubuton.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/js/RestoranScript.js">
+      <publishTime>07/28/2021 20:47:17</publishTime>
+    </File>
+    <File Include="Scripts/js/SagTıkEngel.js">
+      <publishTime>11/19/2021 23:02:06</publishTime>
+    </File>
+    <File Include="Scripts/js/SehirScript.js">
+      <publishTime>06/02/2021 12:45:14</publishTime>
+    </File>
+    <File Include="Scripts/js/Sepet.js">
+      <publishTime>06/02/2021 12:45:14</publishTime>
+    </File>
+    <File Include="Scripts/js/Yonetici.js">
+      <publishTime>07/28/2021 19:58:06</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.2.0.debug.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.2.0.js">
+      <publishTime>03/18/2021 17:34:35</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.js.map">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.min.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.min.js.map">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/popper.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/popper.js.map">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js.map">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/README.md">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/index.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/methods/defaults.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/methods/destroy.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/methods/disableEventListeners.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/methods/enableEventListeners.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/methods/placements.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/methods/update.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/applyStyle.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/arrow.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/computeStyle.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/flip.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/hide.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/index.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/inner.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/keepTogether.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/offset.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/preventOverflow.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/modifiers/shift.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/clockwise.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/computeAutoPlacement.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/debounce.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/find.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/findCommonOffsetParent.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/findIndex.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getBordersSize.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getBoundaries.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getBoundingClientRect.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getClientRect.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getFixedPositionOffsetParent.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getOffsetParent.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getOffsetRect.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getOffsetRectRelativeToArbitraryNode.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getOppositePlacement.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getOppositeVariation.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getOuterSizes.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getParentNode.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getPopperOffsets.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getReferenceNode.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getReferenceOffsets.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getRoot.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getRoundedOffsets.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getScroll.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getScrollParent.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getStyleComputedProperty.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getSupportedPropertyName.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getViewportOffsetRectRelativeToArtbitraryNode.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getWindow.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/getWindowSizes.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/includeScroll.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/index.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isBrowser.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isFixed.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isFunction.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isIE.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isModifierEnabled.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isModifierRequired.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isNumeric.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/isOffsetContainer.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/removeEventListeners.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/runModifiers.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/setAttributes.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/setStyles.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/src/utils/setupEventListeners.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.js.map">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.min.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.min.js.map">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js.flow">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js.map">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.min.js">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.min.js.map">
+      <publishTime>03/18/2021 17:34:36</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>06/02/2021 13:11:09</publishTime>
+    </File>
+    <File Include="SistemMenu/beyti.jpg">
+      <publishTime>04/20/2021 12:09:09</publishTime>
+    </File>
+    <File Include="SistemMenu/fanta.jpg">
+      <publishTime>04/20/2021 12:03:32</publishTime>
+    </File>
+    <File Include="SistemMenu/gazoz.jpg">
+      <publishTime>04/20/2021 12:02:45</publishTime>
+    </File>
+    <File Include="SistemMenu/hamburger.jpg">
+      <publishTime>04/20/2021 12:04:14</publishTime>
+    </File>
+    <File Include="SistemMenu/iskender.jpg">
+      <publishTime>04/20/2021 12:09:49</publishTime>
+    </File>
+    <File Include="SistemMenu/kazandibi.jpg">
+      <publishTime>04/20/2021 12:16:56</publishTime>
+    </File>
+    <File Include="SistemMenu/kellepaca.jpg">
+      <publishTime>04/20/2021 12:18:09</publishTime>
+    </File>
+    <File Include="SistemMenu/kola.jpg">
+      <publishTime>04/20/2021 11:57:49</publishTime>
+    </File>
+    <File Include="SistemMenu/kumpir.jpg">
+      <publishTime>04/20/2021 12:08:17</publishTime>
+    </File>
+    <File Include="SistemMenu/merco.jpg">
+      <publishTime>04/20/2021 12:15:46</publishTime>
+    </File>
+    <File Include="SistemMenu/pizza.jpg">
+      <publishTime>04/20/2021 12:07:12</publishTime>
+    </File>
+    <File Include="Views/AnaSayfa/hakkimizda.cshtml">
+      <publishTime>03/20/2021 19:10:00</publishTime>
+    </File>
+    <File Include="Views/AnaSayfa/iletisim.cshtml">
+      <publishTime>03/18/2021 17:09:01</publishTime>
+    </File>
+    <File Include="Views/isletme/AnaSayfa.cshtml">
+      <publishTime>06/03/2021 12:40:02</publishTime>
+    </File>
+    <File Include="Views/isletme/Contact.cshtml">
+      <publishTime>05/24/2021 18:43:29</publishTime>
+    </File>
+    <File Include="Views/isletme/Giris.cshtml">
+      <publishTime>05/04/2021 10:19:14</publishTime>
+    </File>
+    <File Include="Views/isletme/KendiMenu.cshtml">
+      <publishTime>06/02/2021 23:34:12</publishTime>
+    </File>
+    <File Include="Views/isletme/KendıMenu.cshtml">
+      <publishTime>05/08/2021 18:27:25</publishTime>
+    </File>
+    <File Include="Views/isletme/Masalar.cshtml">
+      <publishTime>03/23/2021 22:19:05</publishTime>
+    </File>
+    <File Include="Views/isletme/Menu.cshtml">
+      <publishTime>06/12/2021 21:22:56</publishTime>
+    </File>
+    <File Include="Views/isletme/Odemeler.cshtml">
+      <publishTime>03/23/2021 19:31:46</publishTime>
+    </File>
+    <File Include="Views/isletme/QrKod.cshtml">
+      <publishTime>05/24/2021 18:43:28</publishTime>
+    </File>
+    <File Include="Views/isletme/Random.cshtml">
+      <publishTime>06/03/2021 12:16:33</publishTime>
+    </File>
+    <File Include="Views/isletme/RestoranBilgi.cshtml">
+      <publishTime>05/04/2021 16:23:19</publishTime>
+    </File>
+    <File Include="Views/isletme/Rezervasyon.cshtml">
+      <publishTime>05/09/2021 16:02:39</publishTime>
+    </File>
+    <File Include="Views/isletme/Siparisler.cshtml">
+      <publishTime>03/18/2021 17:16:19</publishTime>
+    </File>
+    <File Include="Views/isletme/YemekEkle.cshtml">
+      <publishTime>05/08/2021 17:44:34</publishTime>
+    </File>
+    <File Include="Views/KullanıcıGırıs/KullanıcıGırısIndex.cshtml">
+      <publishTime>11/19/2021 23:09:13</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/ankara_BizimRestoran.cshtml">
+      <publishTime>03/18/2021 17:15:23</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/ankara_BurgerKing.cshtml">
+      <publishTime>03/18/2021 17:15:23</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/Ankara_Cayyolu_BizimRestoran.cshtml">
+      <publishTime>03/19/2021 10:51:21</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/Ankara_Kızılay_BizimTatlici.cshtml">
+      <publishTime>05/08/2021 18:47:46</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/Ankara_Kızılay_BizimTatlıcı.cshtml">
+      <publishTime>05/08/2021 18:39:06</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/Ankara_Kızılay_BurgerKing.cshtml">
+      <publishTime>03/18/2021 18:21:21</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/Ankara_Kızılay_Starbucks.cshtml">
+      <publishTime>05/03/2021 22:18:58</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/Ankara_Çayyolu_BizimRestoran.cshtml">
+      <publishTime>03/18/2021 18:21:11</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/isletme.cshtml">
+      <publishTime>05/09/2021 17:41:00</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/Izmir_Alacatı_BizimTatlici.cshtml">
+      <publishTime>05/08/2021 19:01:43</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/Kontrol.cshtml">
+      <publishTime>06/03/2021 16:37:37</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/Odeme.cshtml">
+      <publishTime>06/02/2021 12:45:14</publishTime>
+    </File>
+    <File Include="Views/Restoranlar/Sepet.cshtml">
+      <publishTime>05/03/2021 12:01:45</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Adana.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Adiyaman.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Agri.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Aksaray.cshtml">
+      <publishTime>03/18/2021 17:29:03</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Amasya.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Ankara.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Antalya.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Aydin.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Balikesir.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Bartin.cshtml">
+      <publishTime>03/18/2021 17:29:02</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Batman.cshtml">
+      <publishTime>03/18/2021 17:29:02</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Bilecik.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Bingol.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Bolu.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Burdur.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Bursa.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Canakkale.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Cankiri.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Corum.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Denizli.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Diyarbakir.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Duzce.cshtml">
+      <publishTime>03/18/2021 17:29:03</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Edirne.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Elazig.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Erzincan.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Erzurum.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Eskisehir.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Gaziantep.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Giresun.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Hatay.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/KahramanMaras.cshtml">
+      <publishTime>05/08/2021 13:35:34</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Karabuk.cshtml">
+      <publishTime>03/18/2021 17:29:02</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Karaman.cshtml">
+      <publishTime>03/18/2021 17:29:03</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Kastamonu.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Kayseri.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Kirikkale.cshtml">
+      <publishTime>03/18/2021 17:29:03</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Kirklareli.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Kirsehir.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Kocaeli.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Konya.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Kutahya.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Malatya.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Manisa.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Mardin.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Mersin.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Mugla.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Nevsehir.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Nigde.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Ordu.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Osmaniye.cshtml">
+      <publishTime>03/18/2021 17:29:02</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Rize.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Sakarya.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Samsun.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Sanliurfa.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Siirt.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Sinop.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Sivas.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Tekirdag.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Tokat.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Trabzon.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Usak.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Van.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Yalova.cshtml">
+      <publishTime>03/18/2021 17:29:02</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Yozgat.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/Zonguldak.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/İgdir.cshtml">
+      <publishTime>03/18/2021 17:29:02</publishTime>
+    </File>
+    <File Include="Views/Sehirler/İsparta.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/İstanbul.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Sehirler/İzmir.cshtml">
+      <publishTime>03/18/2021 17:27:55</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>03/18/2021 17:06:46</publishTime>
+    </File>
+    <File Include="Views/Shared/KontrolLayout.cshtml">
+      <publishTime>05/03/2021 19:38:17</publishTime>
+    </File>
+    <File Include="Views/Shared/KullanıcıGirisLayout.cshtml">
+      <publishTime>11/19/2021 23:02:06</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>03/18/2021 17:06:46</publishTime>
+    </File>
+    <File Include="Views/Shared/_MainLayout.cshtml">
+      <publishTime>06/02/2021 12:37:12</publishTime>
+    </File>
+    <File Include="Views/Shared/_PageLayout.cshtml">
+      <publishTime>05/03/2021 12:01:45</publishTime>
+    </File>
+    <File Include="Views/Shared/İsletmeLayout.cshtml">
+      <publishTime>07/28/2021 20:47:17</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>03/18/2021 15:24:03</publishTime>
+    </File>
+    <File Include="Views/WebGiris/Index.cshtml">
+      <publishTime>03/18/2021 17:51:16</publishTime>
+    </File>
+    <File Include="Views/Yonetici/Ana.cshtml">
+      <publishTime>06/02/2021 15:35:20</publishTime>
+    </File>
+    <File Include="Views/Yonetici/Giris.cshtml">
+      <publishTime>06/02/2021 15:21:54</publishTime>
+    </File>
+    <File Include="Views/Yonetici/RestoranEkle.cshtml">
+      <publishTime>07/28/2021 19:58:06</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/19/2021 23:36:01</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

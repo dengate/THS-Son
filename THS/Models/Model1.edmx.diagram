@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4324a730890047009ecf2b1ccffbded7" Name="Diagram1">
+        <EntityTypeShape EntityType="Ahmetson2Model.altkategori" Width="1.5" PointX="12" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.ilce" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.kategori" Width="1.5" PointX="9.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.masa" Width="1.5" PointX="9.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.musteri" Width="1.5" PointX="12" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.odeme" Width="1.5" PointX="14.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.restoran" Width="1.5" PointX="7.5" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.rezervasyon" Width="1.5" PointX="15" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.sehir" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.semt" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.sipari" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.sistemurun" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.urun" Width="1.5" PointX="14.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.yonetici" Width="1.5" PointX="9.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ahmetson2Model.yorum" Width="1.5" PointX="16.5" PointY="6.375" IsExpanded="true" />
+        <AssociationConnector Association="Ahmetson2Model.altkategori_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.urun_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.FK__ilce__Sehir_ID__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.FK__semt__Ilce_ID__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.FK__kategori__Restor__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.masa_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.musteri_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.rezervasyon_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.musteri_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.odeme_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.yorum_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.FK_semtid" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.rezervasyon_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.urun_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.yonetici_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Ahmetson2Model.yorum_ibfk_1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

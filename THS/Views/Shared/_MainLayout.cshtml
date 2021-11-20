@@ -1,0 +1,210 @@
+﻿@using THS.Models;
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>THS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/resimler/icon.ico" type="image/x-icon" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Scripts/css/Menu.css" rel="stylesheet" />
+    <script src="~/Scripts/js/KayanMenu.js"></script>
+    <script src="~/Scripts/js/SehirScript.js"></script>
+    <script src="~/Scripts/js/Menubuton.js"></script>
+    <link href="~/Scripts/css/Loader.css" rel="stylesheet" />
+    <link href="~/Scripts/css/bg.css" rel="stylesheet" />
+    <script src="~/Scripts/js/Logo.js"></script>
+    <script>
+       
+        
+    </script>
+</head>
+<body>
+    <div id="sehirismi" style="display:none;">@Session["sehiradi"]</div>
+ <div class="loading">
+         <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Yükleniyor</span>
+    </div>
+            </div>
+<div class="container-fluid menu" >
+    <div class="container">
+     
+ <div class="logodiv"><img class="logo" src="~/resimler/logo5.png" /></div>
+
+        <div class="menubuton"><div class="butonn">Menü</div></div>
+        <div class="menubutonlar">
+        <a class="btn" href="/AnaSayfa/iletisim/"><button class="buton">İletişim</button></a>
+        <a class="btn" href="/AnaSayfa/hakkimizda/"><button class="buton">Hakkımızda</button></a>
+        <a class="btn" href="/KullanıcıGırıs/KullanıcıGırısIndex/"><button class="buton">Ana Sayfa</button></a>
+       </div>
+</div>
+   </div>
+    @RenderBody()
+    <div style="display:none" id="url">@Session["url"]</div>
+    <div class="container aramacontainer">
+    <div class="sehirsec">
+        <p>Semtinizi Seçiniz</p>
+        <select class="form-control form-control-lg" id="SemtSecim">
+            <option class="gizli" style="display:none; visibility:hidden; opacity:0;">000</option>
+            <option selected id="secili">Semt..</option>
+            @for (int i = 0; i < ViewBag.d.Count; i++)
+            {                            
+                <option class="gizli" style="display:none; visibility:hidden; opacity:0;">@ViewBag.d[i].semtid</option>
+                <option>@ViewBag.d[i].semtadi</option>
+            }
+        </select>
+    </div>
+
+    <div class="isletmesec">
+        <p>İşletme Seçiniz</p>
+        <select class="form-control form-control-lg" id="isletmeSecim">
+        </select>
+    </div>
+
+</div>
+    
+
+   <div class="container reklamcontainer">
+        
+
+     <div class="reklampano">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:100%; height:100%;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="display:none;">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" style="width:100%; height:100%;">
+      <div class="item active" style="width:100%; height:100%;">
+        <img src="~/resimler/kutlama-kovasi-ve-twister-desktop-tr1.jpg" alt="Los Angeles" style="width:100%; height:100%;">
+      </div>
+
+      <div class="item" style="width:100%; height:100%;">
+        <img src="~/resimler/pizza-hut-kopia.png" alt="Chicago" style="width:100%; height:100%;">
+      </div>
+    
+      <div class="item" style="width:100%; height:100%;">
+        <img src="~/resimler/big-king-ailesi-genisledi.jpg" alt="New york" style="width:100%; height:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+       <div class="yorumpano">
+            <div id="myCarousel2" class="carousel slide" data-ride="carousel" style="width:100%; height:100%;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="display:none;">
+       @for (int i = 0; i < ViewBag.Yorumsayisi; i++)
+       {
+           if (i == 0)
+           {
+               <li data-target="#myCarousel2" data-slide-to="@i" class="active"></li>
+           }
+           else
+           {
+               <li data-target="#myCarousel2" data-slide-to="@i"></li>
+           }     
+       }
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" style="width:100%; height:100%;">
+        @for (int i = 0; i < ViewBag.Yorumsayisi; i++)
+        {
+            if (i == 0)
+            {
+               <div class="item active" style="width:100%; height:100%;">
+         <div  style="width:100%; height:100%;"><div style="height:25%;"><div class="yorumcarouselust">İşletme Adı: @ViewBag.UrunYorumu[i].restadi</div><div class="yorumcarouselust">Ürün: @ViewBag.UrunYorumu[i].urunadi</div></div>
+             <div class="yorumcarouselpuan">Puan: @ViewBag.UrunYorumu[i].puan</div>
+             <div class="yorumcarouselalt"><div class="yorumcarouselaltyazi">@ViewBag.UrunYorumu[i].yorumm</div></div>
+
+         </div>
+      </div> 
+            }
+            else
+            {
+                <div class="item" style="width:100%; height:100%;">
+         <div  style="width:100%; height:100%;"><div style="height:25%;"><div class="yorumcarouselust">İşletme Adı: @ViewBag.UrunYorumu[i].restadi</div><div class="yorumcarouselust">Ürün: @ViewBag.UrunYorumu[i].urunadi</div></div>
+             <div class="yorumcarouselpuan">Puan: @ViewBag.UrunYorumu[i].puan</div>
+             <div class="yorumcarouselalt"><div class="yorumcarouselaltyazi">@ViewBag.UrunYorumu[i].yorumm</div></div>
+
+         </div>
+      </div> 
+            }
+
+        }
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+       </div>
+   </div>
+
+<div class="container-fluid" id="footer">
+    <footer>
+        <div class="container" style="height:200px; margin-top:45px; overflow:hidden;">
+            <div class="footericon">
+                <img src="~/resimler/logo6.png" width="70px"; height="70px;"/>
+            </div>
+            <div class="footerbilgi">
+                <div class="contact">
+                    <div class="contact1">İletişim</div>
+                   <div class="contact2">E-mail: aehapdaeog@gmail.com</div>
+                    <div class="contact3">Telefon: 05079647410</div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback1">Feedback</div>
+                    <div class="feedback2">Lütfen fikirlerinizi, hata raporlarınızı,</div>
+                    <div class="feedback3">önerilerinizi bize gönderin!</div>
+                    <div class="feedback3">Herhangi bir geri bildirim</div>
+                    <div class="feedback3">bizim için çok değerlidir.</div>
+                </div>
+            </div>
+            <div class="smtext"><span class="socialtext">Bizi takip edin:</span></div>
+            <div class="socialmedia">   
+                <a class="icon" href="https://www.facebook.com/Temass%C4%B1z-Hizmet-Sistemi-101024968756392"><div class="smicons" style="background-color:#3d5892"><img class="fpng" src="~/resimler/facebook.png"  /></div></a>
+                 <a class="icon" href="https://www.instagram.com/temassizhizmetsistemi/?hl=tr"><div class="smicons" style="background-color:#993c90"><img class="ipng" src="~/resimler/instagram.png"  /></div></a>
+                 <a class="icon" href="https://twitter.com/TemassizS?s=20"><div class="smicons" style="background-color:#26a0ec"><img class="tpng" src="~/resimler/twitter.jpg"  /></div></a>
+            </div>       
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+

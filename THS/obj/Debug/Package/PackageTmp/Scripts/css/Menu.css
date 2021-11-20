@@ -1,0 +1,647 @@
+﻿.sabitleme {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.menu {
+    background-color: #020101;
+    height: 70px;
+    opacity: 0.8;
+    position:relative;
+    z-index:999999;
+}
+
+.masanumara {
+    float:right; 
+    width:120px; 
+    height:auto; 
+    font-size:18px; 
+    color:#ffffff; 
+    text-align: center; 
+    margin-top: 22.25px;
+}
+.logo {
+    width: 300px;
+    height: 70px;
+    position: relative;
+    float: left;
+    cursor:pointer;
+}
+
+.btn {
+    float: right;
+    padding-top: 9px;
+    overflow: hidden;
+}
+
+
+.menubuton {
+
+    position:relative; 
+    margin:auto; 
+    display:none;
+    width:100px;
+    height:50px;
+
+}
+
+.buton {
+    width: 100px;
+    height: 50px;
+    background-color: #020101;
+    border: 1px solid #020101;
+    border-radius: 5px;
+    font-family: Open Sans,sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 38px;
+    transition: all .4s ease-in-out;
+}
+
+.butonn {
+    width: 100px;
+    height: 50px;
+    background-color: #020101;
+    border: 1px solid #020101;
+    border-radius: 5px;
+    font-family: Open Sans,sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 38px;
+    transition: all .4s ease-in-out;
+}
+
+.buton:hover {
+        border: none;
+        background-color: #fff;
+        color: #000000;
+        transform: scale(1.1);
+    }
+
+.butonn:hover {
+        border: none;
+        background-color: #fff;
+        color: #000000;
+        transform: scale(1.1);
+    }
+.aramacontainer {
+    height: 150px;
+    background-color: #ffffff;
+    opacity: 0.95;
+    margin-top: 0.5%;
+    border-radius: 20px;
+}
+
+.sehirsec {
+    width: 35%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 43px;
+    margin-right: 5%;
+}
+
+.isletmesec {
+    width: 42%;
+    float: left;
+    margin-top: 43px;
+}
+
+.reklamcontainer {
+    height: 900px;
+    background-color: #ffffff;
+    opacity: 0.95;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    border-radius: 20px;
+}
+
+.reklampano {
+    width: 90%;
+    height: 60%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yorumpano {
+    width: 90%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+body {
+    background-image: url('/resimler/yemek7.jpg');
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    
+}
+
+#footer {
+    overflow: hidden;
+    width: 100%;
+    height: 290px;
+    background-color: #fff;
+    margin-top: 250px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    opacity: 0.9;
+}
+
+.smicons {
+    width: 70px;
+    height: 70px;
+    -moz-border-radius: 50%; /*Firefox (-moz-)*/
+    -webkit-border-radius: 50%; /*Chrome ve Safari (-webkit-)*/
+    border-radius: 50%;
+    display: block;
+    margin-right: 20px;
+    text-align: center;
+    color: #fff;
+    transition: all .4s ease-in-out;
+}
+
+.smicons:hover {
+        transform: rotate(360deg);
+        filter: brightness(150%);
+    }
+
+.socialmedia {
+    width: 290px;
+    height: 70px;
+    top: 90px;
+    position: relative;
+    right: 20px;
+    float: none;
+    margin: auto 0 auto auto;
+}
+
+.icon {
+    display: inline-block;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.girisbuton:hover {
+    border: none;
+    background-color: #fff;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.footericon {
+    margin-top: 65px;
+    margin-left: 1%;
+    float: left;
+}
+
+.smtext {
+    text-align: center;
+    width: 290px;
+    height: 30px;
+    top: 70px;
+    position: relative;
+    right: 20px;
+    float: none;
+    margin: auto 15px auto auto;
+    overflow: hidden;
+}
+
+.socialtext {
+    text-align: center;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.footerbilgi {
+    width: 717px;
+    height: 190px;
+    margin-top: 5px;
+    float: left;
+    margin-left: 20px;
+}
+
+.contact {
+    width: 350px;
+    height: 189px;
+    margin-top: 0.5px;
+    float: left;
+}
+
+.contact1 {
+    float: left;
+    margin-right: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b34444;
+}
+
+.contact2 {
+    float: left;
+    margin-right: 70px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635151;
+}
+
+.contact3 {
+    float: left;
+    margin-right: 70px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635151;
+}
+
+.feedback1 {
+    float: left;
+    margin-right: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b34444;
+}
+
+.feedback2 {
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635151;
+}
+
+.feedback3 {
+    float: left;
+    margin-left: 30px;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635151;
+}
+
+.fpng {
+    width: 40px;
+    height: 40px;
+    margin-top: 14px;
+    margin-right: 7px;
+}
+
+.ipng {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.tpng {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.menubutonlar {
+
+    float:right;
+    width:378px;
+    height:67px;
+}
+
+.logodiv {
+    width:300px;
+    float:left;
+    height:70px;
+}
+
+.pageyazi {
+    margin:auto; 
+    font-size:17px; 
+    text-align:center
+}
+
+.pagebaslik {
+    margin:auto; 
+    font-size:22px; 
+    text-align:center
+}
+
+.pageyazidiv {
+    width:100%; 
+    margin-bottom:15px;
+}
+
+.pagebaslikdiv {
+   width:100%; 
+   margin-bottom:30px;
+}
+
+.pagediv {
+   width:300px; 
+   margin:auto; 
+   margin-bottom:30px;
+}
+
+.pagehead {
+   margin:auto; 
+   width:80px; 
+   border-bottom: 1px solid;
+}
+
+.pageheaddiv {
+   width:100%; 
+   margin-bottom:50px; 
+   margin-top:30px;
+}
+
+.pagecontainer {
+  background-color:#ffffff; 
+  margin-top:50px;
+  border-radius: 20px;
+}
+
+.yorumcarouselust {
+  width:50%; 
+  height:100%; 
+  text-align:center; 
+  float:left; 
+  border:2px solid #d52f2f; 
+  color:#d52f2f; 
+  overflow:auto;
+  font-size:18px;
+}
+
+.yorumcarouselpuan {
+  width:100%; 
+  height:15%;
+  text-align:center; 
+  border:2px solid #d52f2f; 
+  color:#ff6a00; 
+  font-size:18px;
+}
+
+.yorumcarouselalt {
+  width:100%; 
+  height:60%;
+  text-align:center; 
+  border:2px solid #d52f2f; 
+  font-size:18px;
+}
+
+.yorumcarouselaltyazi {
+ width:80%; 
+ height:80%; 
+ text-align:center; 
+ margin: auto; 
+ margin-top: 15px; 
+ overflow:auto
+}
+
+
+@media all and (max-width:1200px) {
+
+    .feedback {
+        display: none;
+    }
+}
+
+@media all and (min-width:992px) and (max-width:1200px) {
+    .footerbilgi {
+        width: 400px;
+    }
+}
+
+@media all and (min-width:788px) and (max-width:992px) {
+    .footerbilgi {
+        width: 332px;
+    }
+
+    .contact {
+        width: 330px;
+    }
+
+    .container {
+        width:100%
+    }
+}
+
+@media all and (max-width:787px) {
+    .footerbilgi {
+        width: 332px;
+        height: auto;
+        float: none;
+        margin: auto 15px auto auto;
+    }
+
+    .smtext {
+        display: none;
+    }
+
+    .contact {
+        width: 330px;
+        height: 35px;
+        float: right;
+        margin-top: 0;
+    }
+
+    .contact1 {
+        display: none;
+    }
+
+    .contact2 {
+        margin-top: 18px;
+        margin-right: 10px;
+        margin-left: 70px;
+    }
+
+    .contact3 {
+        margin-right: 10px;
+        margin-left: 70px;
+    }
+
+    .container {
+        width:100%;
+    }
+
+}
+
+
+@media all and (max-width:738px) {
+    .menu {
+    height: 140px;
+}
+    .menubutonlar {
+
+    float:none;
+    margin:auto;
+    position:relative;
+    background-color: #020101;
+}
+
+    .logodiv {
+        position:relative;
+        float:none;
+        margin:auto;
+
+}
+}
+
+@media all and (max-width:500px) {
+    .smicons {
+        width: 40px;
+        height: 40px;
+    }
+
+    .fpng {
+        width: 25px;
+        height: 25px;
+        margin-top: 7px;
+        margin-right: 4px;
+    }
+
+    .ipng {
+        width: 25px;
+        height: 25px;
+        margin-top: 7.5px;
+    }
+
+    .tpng {
+        width: 25px;
+        height: 25px;
+        margin-top: 7.5px;
+    }
+
+    .smtext {
+        display: none;
+    }
+
+    .socialmedia {
+        width: 187px;
+        right: 0;
+        top: 120px;
+    }
+
+    .smicons {
+        margin-right: 10px;
+    }
+
+    .reklampano {
+    height: 40%;
+    margin-top: 7%;
+}
+
+.yorumpano {
+    height:35%;
+    margin-top: 20%;
+}
+}
+
+@media all and (max-width:480px) {
+    .contact {
+        width: 220px;
+        margin-right: 19px;
+    }
+
+    .contact2 {
+        margin-top: 18px;
+        margin-right: 10px;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .contact3 {
+        margin-right: 10px;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .sehirsec {
+        width:100%;
+        float: none;
+        margin:auto;
+
+}
+
+.isletmesec {
+    width:100%;
+    float: none;
+    margin:auto;
+}
+
+
+.masanumara {
+    float:none; 
+    margin:auto;
+    margin-top:15px;
+}
+
+.logo {
+   
+    float: none;
+    margin:auto;
+}
+}
+
+@media all and (max-width:439px) {
+    .menubuton {
+        display:block;
+    }
+    .butonn {
+        margin:auto;
+        border:1px solid #ffffff;
+        width:100%;
+    }
+    .buton {
+        margin:auto;
+        border:1px solid #ffffff;
+        width:100%;
+    }
+        .menubutonlar {
+    visibility:hidden;
+    opacity:0;
+    width: 80%;
+    height: 0;
+    margin-top: 18px;
+}
+
+    .btn {
+        float:none;
+        width:100%;
+
+    }
+}
+@media all and (max-width:342px) {
+    .logo {
+        width: 280px;
+    }
+    .logodiv {
+        width: 280px;
+    }
+    .footericon {
+        margin-right: 20px;
+    }
+}

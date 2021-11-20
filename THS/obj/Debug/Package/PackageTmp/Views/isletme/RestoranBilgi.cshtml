@@ -1,0 +1,69 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>İşletme</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/resimler/icon.ico" type="image/x-icon" >
+    <script type='text/javascript' src='secim.js'></script>
+    <link href="~/Scripts/css/arda.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form action="/isletme/RestoranBilgi" method="post" enctype="multipart/form-data" class="contact100-form validate-form">
+                <span class="contact100-form-title">İŞLETME
+                </span>
+
+                <div class="wrap-input100 validate-input bg1">
+                    <span class="label-input100">İşletme Adı</span>
+                    <input class="input100" type="text" id="isletmeadi" name="name" placeholder="İsletme Adi" required>
+                </div>
+                <div class="wrap-input100 validate-input bg1 rs1-wrap-input100">
+                    <span class="label-input100">İşletme Adresi</span>
+                    <input class="input100" type="text" id="isletmeadresi" name="adres" placeholder="İsletme Adresi" required>
+                </div>
+                <div class="wrap-input100 validate-input bg1 rs1-wrap-input100">
+                    <span class="label-input100">İşletme Mail</span>
+                    <input class="input100" type="text" id="mailadresi" name="email" placeholder="İsletme Mail" required>
+                </div>
+                    <div class="wrap-input100 validate-input bg1 rs1-wrap-input100">
+                    <span class="label-input100">İşletme Tip</span>
+                    <input class="input100" type="text" id="tip" name="email" placeholder="İsletme Tip" required>
+                </div>
+
+                <div class="wrap-input100 validate-input bg1 rs1-wrap-input100">
+                    <span class="label-input100">Toplam Masa Sayısı</span>
+                    <input class="input100" type="number" id="masasayisi" name="masa_sayisi" placeholder="Masa Sayısı">
+                </div>
+
+                <div class="wrap-input100 bg1 rs1-wrap-input100">
+                    <span class="label-input100">İşletme Telefon Numarası</span>
+                    <input class="input100" type="number" id="pnumber" name="phone" placeholder="İşletme Telefon Numarası" required>
+                </div>
+      
+                <div class="wrap-input100 validate-input bg1">
+                    <center>
+					<span class="label-input100">Resim Ekle</span>
+					<input type="file" id="myfile" name="myfile">
+					</center>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <button id="kaydetbtn" class="contact100-form-btn">
+                        <span>Kaydet
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

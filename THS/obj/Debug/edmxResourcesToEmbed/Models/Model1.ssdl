@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Ahmetson2Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Ahmetson2ModelStoreContainer">
+    <EntitySet Name="altkategori" EntityType="Ahmetson2Model.Store.altkategori" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ilce" EntityType="Ahmetson2Model.Store.ilce" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="kategori" EntityType="Ahmetson2Model.Store.kategori" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="masa" EntityType="Ahmetson2Model.Store.masa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="musteri" EntityType="Ahmetson2Model.Store.musteri" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="odeme" EntityType="Ahmetson2Model.Store.odeme" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="restoran" EntityType="Ahmetson2Model.Store.restoran" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rezervasyon" EntityType="Ahmetson2Model.Store.rezervasyon" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sehir" EntityType="Ahmetson2Model.Store.sehir" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="semt" EntityType="Ahmetson2Model.Store.semt" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="siparis" EntityType="Ahmetson2Model.Store.siparis" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sistemurun" EntityType="Ahmetson2Model.Store.sistemurun" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="urun" EntityType="Ahmetson2Model.Store.urun" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="yonetici" EntityType="Ahmetson2Model.Store.yonetici" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="yorum" EntityType="Ahmetson2Model.Store.yorum" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="altkategori_ibfk_1" Association="Ahmetson2Model.Store.altkategori_ibfk_1">
+      <End Role="kategori" EntitySet="kategori" />
+      <End Role="altkategori" EntitySet="altkategori" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ilce__Sehir_ID__440B1D61" Association="Ahmetson2Model.Store.FK__ilce__Sehir_ID__440B1D61">
+      <End Role="sehir" EntitySet="sehir" />
+      <End Role="ilce" EntitySet="ilce" />
+    </AssociationSet>
+    <AssociationSet Name="FK__kategori__Restor__44FF419A" Association="Ahmetson2Model.Store.FK__kategori__Restor__44FF419A">
+      <End Role="restoran" EntitySet="restoran" />
+      <End Role="kategori" EntitySet="kategori" />
+    </AssociationSet>
+    <AssociationSet Name="FK__semt__Ilce_ID__4CA06362" Association="Ahmetson2Model.Store.FK__semt__Ilce_ID__4CA06362">
+      <End Role="ilce" EntitySet="ilce" />
+      <End Role="semt" EntitySet="semt" />
+    </AssociationSet>
+    <AssociationSet Name="FK_semtid" Association="Ahmetson2Model.Store.FK_semtid">
+      <End Role="semt" EntitySet="semt" />
+      <End Role="restoran" EntitySet="restoran" />
+    </AssociationSet>
+    <AssociationSet Name="masa_ibfk_1" Association="Ahmetson2Model.Store.masa_ibfk_1">
+      <End Role="restoran" EntitySet="restoran" />
+      <End Role="masa" EntitySet="masa" />
+    </AssociationSet>
+    <AssociationSet Name="musteri_ibfk_1" Association="Ahmetson2Model.Store.musteri_ibfk_1">
+      <End Role="restoran" EntitySet="restoran" />
+      <End Role="musteri" EntitySet="musteri" />
+    </AssociationSet>
+    <AssociationSet Name="musteri_ibfk_2" Association="Ahmetson2Model.Store.musteri_ibfk_2">
+      <End Role="masa" EntitySet="masa" />
+      <End Role="musteri" EntitySet="musteri" />
+    </AssociationSet>
+    <AssociationSet Name="odeme_ibfk_1" Association="Ahmetson2Model.Store.odeme_ibfk_1">
+      <End Role="musteri" EntitySet="musteri" />
+      <End Role="odeme" EntitySet="odeme" />
+    </AssociationSet>
+    <AssociationSet Name="rezervasyon_ibfk_1" Association="Ahmetson2Model.Store.rezervasyon_ibfk_1">
+      <End Role="restoran" EntitySet="restoran" />
+      <End Role="rezervasyon" EntitySet="rezervasyon" />
+    </AssociationSet>
+    <AssociationSet Name="rezervasyon_ibfk_2" Association="Ahmetson2Model.Store.rezervasyon_ibfk_2">
+      <End Role="masa" EntitySet="masa" />
+      <End Role="rezervasyon" EntitySet="rezervasyon" />
+    </AssociationSet>
+    <AssociationSet Name="urun_ibfk_1" Association="Ahmetson2Model.Store.urun_ibfk_1">
+      <End Role="restoran" EntitySet="restoran" />
+      <End Role="urun" EntitySet="urun" />
+    </AssociationSet>
+    <AssociationSet Name="urun_ibfk_2" Association="Ahmetson2Model.Store.urun_ibfk_2">
+      <End Role="altkategori" EntitySet="altkategori" />
+      <End Role="urun" EntitySet="urun" />
+    </AssociationSet>
+    <AssociationSet Name="yonetici_ibfk_1" Association="Ahmetson2Model.Store.yonetici_ibfk_1">
+      <End Role="restoran" EntitySet="restoran" />
+      <End Role="yonetici" EntitySet="yonetici" />
+    </AssociationSet>
+    <AssociationSet Name="yorum_ibfk_1" Association="Ahmetson2Model.Store.yorum_ibfk_1">
+      <End Role="urun" EntitySet="urun" />
+      <End Role="yorum" EntitySet="yorum" />
+    </AssociationSet>
+    <AssociationSet Name="yorum_ibfk_2" Association="Ahmetson2Model.Store.yorum_ibfk_2">
+      <End Role="musteri" EntitySet="musteri" />
+      <End Role="yorum" EntitySet="yorum" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="altkategori">
+    <Key>
+      <PropertyRef Name="Altkategori_ID" />
+    </Key>
+    <Property Name="Altkategori_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Altkategori_ismi" Type="varchar" MaxLength="255" />
+    <Property Name="Kategori_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="ilce">
+    <Key>
+      <PropertyRef Name="Ilce_ID" />
+    </Key>
+    <Property Name="Ilce_ID" Type="int" Nullable="false" />
+    <Property Name="Sehir_ID" Type="int" Nullable="false" />
+    <Property Name="Ilce_adi" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="kategori">
+    <Key>
+      <PropertyRef Name="Kategori_ID" />
+    </Key>
+    <Property Name="Kategori_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kategori_ismi" Type="varchar" MaxLength="255" />
+    <Property Name="Restoran_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="masa">
+    <Key>
+      <PropertyRef Name="Masa_ID" />
+    </Key>
+    <Property Name="Masa_ID" Type="int" Nullable="false" />
+    <Property Name="Restoran_ID" Type="int" />
+    <Property Name="Masa_kisiSayisi" Type="int" />
+    <Property Name="Masa_bosmu" Type="bit" Nullable="false" />
+    <Property Name="Masa_numarasi" Type="int" />
+  </EntityType>
+  <EntityType Name="musteri">
+    <Key>
+      <PropertyRef Name="Musteri_ID" />
+    </Key>
+    <Property Name="Musteri_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Masa_ID" Type="int" />
+    <Property Name="Restoran_ID" Type="int" />
+    <Property Name="durum" Type="bit" />
+    <Property Name="cikis" Type="bit" />
+  </EntityType>
+  <EntityType Name="odeme">
+    <Key>
+      <PropertyRef Name="Odeme_ID" />
+    </Key>
+    <Property Name="Odeme_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Odeme_tipi" Type="varchar" MaxLength="255" />
+    <Property Name="Odeme_zamani" Type="varchar" MaxLength="50" />
+    <Property Name="Musteri_ID" Type="int" />
+    <Property Name="Tutar" Type="float" />
+  </EntityType>
+  <EntityType Name="restoran">
+    <Key>
+      <PropertyRef Name="Restoran_ID" />
+    </Key>
+    <Property Name="Restoran_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Restoran_tipi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Restoran_mail" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Restoran_adresi" Type="varchar(max)" Nullable="false" />
+    <Property Name="Restoran_adi" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="Restoran_telefonno" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="Restoran_resim" Type="varchar" MaxLength="255" />
+    <Property Name="Semt_ID" Type="int" />
+    <Property Name="Random" Type="int" />
+    <Property Name="Security" Type="int" />
+  </EntityType>
+  <EntityType Name="rezervasyon">
+    <Key>
+      <PropertyRef Name="Rezervasyon_ID" />
+    </Key>
+    <Property Name="Rezervasyon_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Restoran_ID" Type="int" />
+    <Property Name="Masa_ID" Type="int" />
+    <Property Name="Rezervasyon_zamani" Type="time" Precision="0" />
+    <Property Name="Rezervasyon_gunu" Type="date" />
+    <Property Name="onay" Type="bit" />
+  </EntityType>
+  <EntityType Name="sehir">
+    <Key>
+      <PropertyRef Name="Sehir_ID" />
+    </Key>
+    <Property Name="Sehir_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Sehir_adi" Type="varchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="semt">
+    <Key>
+      <PropertyRef Name="Semt_ID" />
+    </Key>
+    <Property Name="Ilce_ID" Type="int" Nullable="false" />
+    <Property Name="Semt_ID" Type="int" Nullable="false" />
+    <Property Name="Semt_adi" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="siparis">
+    <Key>
+      <PropertyRef Name="Siparis_ID" />
+    </Key>
+    <Property Name="Siparis_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Urun_ID" Type="int" />
+    <Property Name="Musteri_ID" Type="int" />
+    <Property Name="Miktar" Type="int" />
+    <Property Name="durum" Type="bit" />
+    <Property Name="hazir" Type="bit" />
+  </EntityType>
+  <EntityType Name="sistemurun">
+    <Key>
+      <PropertyRef Name="Urun_ID" />
+    </Key>
+    <Property Name="Urun_adi" Type="varchar" MaxLength="255" />
+    <Property Name="Urun_fiyati" Type="float" />
+    <Property Name="Urun_aciklamasi" Type="varchar" MaxLength="255" />
+    <Property Name="Urun_kalorisi" Type="int" />
+    <Property Name="Urun_pismeSuresi" Type="int" />
+    <Property Name="Urun_resmi" Type="varchar" MaxLength="255" />
+    <Property Name="Urun_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="urun">
+    <Key>
+      <PropertyRef Name="Urun_ID" />
+    </Key>
+    <Property Name="Urun_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Restoran_ID" Type="int" />
+    <Property Name="Altkategori_ID" Type="int" />
+    <Property Name="Urun_adi" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Urun_fiyati" Type="float" Nullable="false" />
+    <Property Name="Urun_aciklamasi" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Urun_kalorisi" Type="int" />
+    <Property Name="Urun_pismeSuresi" Type="int" />
+    <Property Name="Urun_resmi" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="yonetici">
+    <Key>
+      <PropertyRef Name="Yonetici_ID" />
+    </Key>
+    <Property Name="Yonetici_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Restoran_ID" Type="int" />
+    <Property Name="Yonetici_mail" Type="varchar(max)" Nullable="false" />
+    <Property Name="Yonetici_adi" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Yonetici_soyadi" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Yonetici_kullaniciadi" Type="varchar" Nullable="false" MaxLength="16" />
+    <Property Name="Yonetici_telefonno" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Yonetici_sifre" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="yorum">
+    <Key>
+      <PropertyRef Name="Yorum_ID" />
+    </Key>
+    <Property Name="Yorum_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="yorumlar" Type="varchar" MaxLength="255" />
+    <Property Name="urun_ID" Type="int" Nullable="false" />
+    <Property Name="puan" Type="int" />
+    <Property Name="musteri_ID" Type="int" />
+    <Property Name="restoran_ID" Type="int" />
+  </EntityType>
+  <Association Name="altkategori_ibfk_1">
+    <End Role="kategori" Type="Ahmetson2Model.Store.kategori" Multiplicity="0..1" />
+    <End Role="altkategori" Type="Ahmetson2Model.Store.altkategori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kategori">
+        <PropertyRef Name="Kategori_ID" />
+      </Principal>
+      <Dependent Role="altkategori">
+        <PropertyRef Name="Kategori_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ilce__Sehir_ID__440B1D61">
+    <End Role="sehir" Type="Ahmetson2Model.Store.sehir" Multiplicity="1" />
+    <End Role="ilce" Type="Ahmetson2Model.Store.ilce" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sehir">
+        <PropertyRef Name="Sehir_ID" />
+      </Principal>
+      <Dependent Role="ilce">
+        <PropertyRef Name="Sehir_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__kategori__Restor__44FF419A">
+    <End Role="restoran" Type="Ahmetson2Model.Store.restoran" Multiplicity="0..1" />
+    <End Role="kategori" Type="Ahmetson2Model.Store.kategori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="restoran">
+        <PropertyRef Name="Restoran_ID" />
+      </Principal>
+      <Dependent Role="kategori">
+        <PropertyRef Name="Restoran_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__semt__Ilce_ID__4CA06362">
+    <End Role="ilce" Type="Ahmetson2Model.Store.ilce" Multiplicity="1" />
+    <End Role="semt" Type="Ahmetson2Model.Store.semt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ilce">
+        <PropertyRef Name="Ilce_ID" />
+      </Principal>
+      <Dependent Role="semt">
+        <PropertyRef Name="Ilce_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_semtid">
+    <End Role="semt" Type="Ahmetson2Model.Store.semt" Multiplicity="0..1" />
+    <End Role="restoran" Type="Ahmetson2Model.Store.restoran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="semt">
+        <PropertyRef Name="Semt_ID" />
+      </Principal>
+      <Dependent Role="restoran">
+        <PropertyRef Name="Semt_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="masa_ibfk_1">
+    <End Role="restoran" Type="Ahmetson2Model.Store.restoran" Multiplicity="0..1" />
+    <End Role="masa" Type="Ahmetson2Model.Store.masa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="restoran">
+        <PropertyRef Name="Restoran_ID" />
+      </Principal>
+      <Dependent Role="masa">
+        <PropertyRef Name="Restoran_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="musteri_ibfk_1">
+    <End Role="restoran" Type="Ahmetson2Model.Store.restoran" Multiplicity="0..1" />
+    <End Role="musteri" Type="Ahmetson2Model.Store.musteri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="restoran">
+        <PropertyRef Name="Restoran_ID" />
+      </Principal>
+      <Dependent Role="musteri">
+        <PropertyRef Name="Restoran_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="musteri_ibfk_2">
+    <End Role="masa" Type="Ahmetson2Model.Store.masa" Multiplicity="0..1" />
+    <End Role="musteri" Type="Ahmetson2Model.Store.musteri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="masa">
+        <PropertyRef Name="Masa_ID" />
+      </Principal>
+      <Dependent Role="musteri">
+        <PropertyRef Name="Masa_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="odeme_ibfk_1">
+    <End Role="musteri" Type="Ahmetson2Model.Store.musteri" Multiplicity="0..1" />
+    <End Role="odeme" Type="Ahmetson2Model.Store.odeme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="musteri">
+        <PropertyRef Name="Musteri_ID" />
+      </Principal>
+      <Dependent Role="odeme">
+        <PropertyRef Name="Musteri_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rezervasyon_ibfk_1">
+    <End Role="restoran" Type="Ahmetson2Model.Store.restoran" Multiplicity="0..1" />
+    <End Role="rezervasyon" Type="Ahmetson2Model.Store.rezervasyon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="restoran">
+        <PropertyRef Name="Restoran_ID" />
+      </Principal>
+      <Dependent Role="rezervasyon">
+        <PropertyRef Name="Restoran_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rezervasyon_ibfk_2">
+    <End Role="masa" Type="Ahmetson2Model.Store.masa" Multiplicity="0..1" />
+    <End Role="rezervasyon" Type="Ahmetson2Model.Store.rezervasyon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="masa">
+        <PropertyRef Name="Masa_ID" />
+      </Principal>
+      <Dependent Role="rezervasyon">
+        <PropertyRef Name="Masa_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="urun_ibfk_1">
+    <End Role="restoran" Type="Ahmetson2Model.Store.restoran" Multiplicity="0..1" />
+    <End Role="urun" Type="Ahmetson2Model.Store.urun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="restoran">
+        <PropertyRef Name="Restoran_ID" />
+      </Principal>
+      <Dependent Role="urun">
+        <PropertyRef Name="Restoran_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="urun_ibfk_2">
+    <End Role="altkategori" Type="Ahmetson2Model.Store.altkategori" Multiplicity="0..1" />
+    <End Role="urun" Type="Ahmetson2Model.Store.urun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="altkategori">
+        <PropertyRef Name="Altkategori_ID" />
+      </Principal>
+      <Dependent Role="urun">
+        <PropertyRef Name="Altkategori_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="yonetici_ibfk_1">
+    <End Role="restoran" Type="Ahmetson2Model.Store.restoran" Multiplicity="0..1" />
+    <End Role="yonetici" Type="Ahmetson2Model.Store.yonetici" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="restoran">
+        <PropertyRef Name="Restoran_ID" />
+      </Principal>
+      <Dependent Role="yonetici">
+        <PropertyRef Name="Restoran_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="yorum_ibfk_1">
+    <End Role="urun" Type="Ahmetson2Model.Store.urun" Multiplicity="1" />
+    <End Role="yorum" Type="Ahmetson2Model.Store.yorum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="urun">
+        <PropertyRef Name="Urun_ID" />
+      </Principal>
+      <Dependent Role="yorum">
+        <PropertyRef Name="urun_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="yorum_ibfk_2">
+    <End Role="musteri" Type="Ahmetson2Model.Store.musteri" Multiplicity="0..1" />
+    <End Role="yorum" Type="Ahmetson2Model.Store.yorum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="musteri">
+        <PropertyRef Name="Musteri_ID" />
+      </Principal>
+      <Dependent Role="yorum">
+        <PropertyRef Name="musteri_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

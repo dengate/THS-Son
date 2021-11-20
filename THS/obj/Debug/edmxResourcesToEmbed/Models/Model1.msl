@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Ahmetson2ModelStoreContainer" CdmEntityContainer="AhmetEntities2">
+    <EntitySetMapping Name="altkategoris">
+      <EntityTypeMapping TypeName="Ahmetson2Model.altkategori">
+        <MappingFragment StoreEntitySet="altkategori">
+          <ScalarProperty Name="Altkategori_ID" ColumnName="Altkategori_ID" />
+          <ScalarProperty Name="Altkategori_ismi" ColumnName="Altkategori_ismi" />
+          <ScalarProperty Name="Kategori_ID" ColumnName="Kategori_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ilces">
+      <EntityTypeMapping TypeName="Ahmetson2Model.ilce">
+        <MappingFragment StoreEntitySet="ilce">
+          <ScalarProperty Name="Ilce_ID" ColumnName="Ilce_ID" />
+          <ScalarProperty Name="Sehir_ID" ColumnName="Sehir_ID" />
+          <ScalarProperty Name="Ilce_adi" ColumnName="Ilce_adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kategoris">
+      <EntityTypeMapping TypeName="Ahmetson2Model.kategori">
+        <MappingFragment StoreEntitySet="kategori">
+          <ScalarProperty Name="Kategori_ID" ColumnName="Kategori_ID" />
+          <ScalarProperty Name="Kategori_ismi" ColumnName="Kategori_ismi" />
+          <ScalarProperty Name="Restoran_ID" ColumnName="Restoran_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="masas">
+      <EntityTypeMapping TypeName="Ahmetson2Model.masa">
+        <MappingFragment StoreEntitySet="masa">
+          <ScalarProperty Name="Masa_ID" ColumnName="Masa_ID" />
+          <ScalarProperty Name="Restoran_ID" ColumnName="Restoran_ID" />
+          <ScalarProperty Name="Masa_kisiSayisi" ColumnName="Masa_kisiSayisi" />
+          <ScalarProperty Name="Masa_bosmu" ColumnName="Masa_bosmu" />
+          <ScalarProperty Name="Masa_numarasi" ColumnName="Masa_numarasi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="musteris">
+      <EntityTypeMapping TypeName="Ahmetson2Model.musteri">
+        <MappingFragment StoreEntitySet="musteri">
+          <ScalarProperty Name="Musteri_ID" ColumnName="Musteri_ID" />
+          <ScalarProperty Name="Masa_ID" ColumnName="Masa_ID" />
+          <ScalarProperty Name="Restoran_ID" ColumnName="Restoran_ID" />
+          <ScalarProperty Name="durum" ColumnName="durum" />
+          <ScalarProperty Name="cikis" ColumnName="cikis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="odemes">
+      <EntityTypeMapping TypeName="Ahmetson2Model.odeme">
+        <MappingFragment StoreEntitySet="odeme">
+          <ScalarProperty Name="Odeme_ID" ColumnName="Odeme_ID" />
+          <ScalarProperty Name="Odeme_tipi" ColumnName="Odeme_tipi" />
+          <ScalarProperty Name="Odeme_zamani" ColumnName="Odeme_zamani" />
+          <ScalarProperty Name="Musteri_ID" ColumnName="Musteri_ID" />
+          <ScalarProperty Name="Tutar" ColumnName="Tutar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="restorans">
+      <EntityTypeMapping TypeName="Ahmetson2Model.restoran">
+        <MappingFragment StoreEntitySet="restoran">
+          <ScalarProperty Name="Restoran_ID" ColumnName="Restoran_ID" />
+          <ScalarProperty Name="Restoran_tipi" ColumnName="Restoran_tipi" />
+          <ScalarProperty Name="Restoran_mail" ColumnName="Restoran_mail" />
+          <ScalarProperty Name="Restoran_adresi" ColumnName="Restoran_adresi" />
+          <ScalarProperty Name="Restoran_adi" ColumnName="Restoran_adi" />
+          <ScalarProperty Name="Restoran_telefonno" ColumnName="Restoran_telefonno" />
+          <ScalarProperty Name="Restoran_resim" ColumnName="Restoran_resim" />
+          <ScalarProperty Name="Semt_ID" ColumnName="Semt_ID" />
+          <ScalarProperty Name="Random" ColumnName="Random" />
+          <ScalarProperty Name="Security" ColumnName="Security" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rezervasyons">
+      <EntityTypeMapping TypeName="Ahmetson2Model.rezervasyon">
+        <MappingFragment StoreEntitySet="rezervasyon">
+          <ScalarProperty Name="Rezervasyon_ID" ColumnName="Rezervasyon_ID" />
+          <ScalarProperty Name="Restoran_ID" ColumnName="Restoran_ID" />
+          <ScalarProperty Name="Masa_ID" ColumnName="Masa_ID" />
+          <ScalarProperty Name="Rezervasyon_zamani" ColumnName="Rezervasyon_zamani" />
+          <ScalarProperty Name="Rezervasyon_gunu" ColumnName="Rezervasyon_gunu" />
+          <ScalarProperty Name="onay" ColumnName="onay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sehirs">
+      <EntityTypeMapping TypeName="Ahmetson2Model.sehir">
+        <MappingFragment StoreEntitySet="sehir">
+          <ScalarProperty Name="Sehir_ID" ColumnName="Sehir_ID" />
+          <ScalarProperty Name="Sehir_adi" ColumnName="Sehir_adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="semts">
+      <EntityTypeMapping TypeName="Ahmetson2Model.semt">
+        <MappingFragment StoreEntitySet="semt">
+          <ScalarProperty Name="Ilce_ID" ColumnName="Ilce_ID" />
+          <ScalarProperty Name="Semt_ID" ColumnName="Semt_ID" />
+          <ScalarProperty Name="Semt_adi" ColumnName="Semt_adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="siparis">
+      <EntityTypeMapping TypeName="Ahmetson2Model.sipari">
+        <MappingFragment StoreEntitySet="siparis">
+          <ScalarProperty Name="Siparis_ID" ColumnName="Siparis_ID" />
+          <ScalarProperty Name="Urun_ID" ColumnName="Urun_ID" />
+          <ScalarProperty Name="Musteri_ID" ColumnName="Musteri_ID" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="durum" ColumnName="durum" />
+          <ScalarProperty Name="hazir" ColumnName="hazir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sistemuruns">
+      <EntityTypeMapping TypeName="Ahmetson2Model.sistemurun">
+        <MappingFragment StoreEntitySet="sistemurun">
+          <ScalarProperty Name="Urun_adi" ColumnName="Urun_adi" />
+          <ScalarProperty Name="Urun_fiyati" ColumnName="Urun_fiyati" />
+          <ScalarProperty Name="Urun_aciklamasi" ColumnName="Urun_aciklamasi" />
+          <ScalarProperty Name="Urun_kalorisi" ColumnName="Urun_kalorisi" />
+          <ScalarProperty Name="Urun_pismeSuresi" ColumnName="Urun_pismeSuresi" />
+          <ScalarProperty Name="Urun_resmi" ColumnName="Urun_resmi" />
+          <ScalarProperty Name="Urun_ID" ColumnName="Urun_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="uruns">
+      <EntityTypeMapping TypeName="Ahmetson2Model.urun">
+        <MappingFragment StoreEntitySet="urun">
+          <ScalarProperty Name="Urun_ID" ColumnName="Urun_ID" />
+          <ScalarProperty Name="Restoran_ID" ColumnName="Restoran_ID" />
+          <ScalarProperty Name="Altkategori_ID" ColumnName="Altkategori_ID" />
+          <ScalarProperty Name="Urun_adi" ColumnName="Urun_adi" />
+          <ScalarProperty Name="Urun_fiyati" ColumnName="Urun_fiyati" />
+          <ScalarProperty Name="Urun_aciklamasi" ColumnName="Urun_aciklamasi" />
+          <ScalarProperty Name="Urun_kalorisi" ColumnName="Urun_kalorisi" />
+          <ScalarProperty Name="Urun_pismeSuresi" ColumnName="Urun_pismeSuresi" />
+          <ScalarProperty Name="Urun_resmi" ColumnName="Urun_resmi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yoneticis">
+      <EntityTypeMapping TypeName="Ahmetson2Model.yonetici">
+        <MappingFragment StoreEntitySet="yonetici">
+          <ScalarProperty Name="Yonetici_ID" ColumnName="Yonetici_ID" />
+          <ScalarProperty Name="Restoran_ID" ColumnName="Restoran_ID" />
+          <ScalarProperty Name="Yonetici_mail" ColumnName="Yonetici_mail" />
+          <ScalarProperty Name="Yonetici_adi" ColumnName="Yonetici_adi" />
+          <ScalarProperty Name="Yonetici_soyadi" ColumnName="Yonetici_soyadi" />
+          <ScalarProperty Name="Yonetici_kullaniciadi" ColumnName="Yonetici_kullaniciadi" />
+          <ScalarProperty Name="Yonetici_telefonno" ColumnName="Yonetici_telefonno" />
+          <ScalarProperty Name="Yonetici_sifre" ColumnName="Yonetici_sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yorums">
+      <EntityTypeMapping TypeName="Ahmetson2Model.yorum">
+        <MappingFragment StoreEntitySet="yorum">
+          <ScalarProperty Name="Yorum_ID" ColumnName="Yorum_ID" />
+          <ScalarProperty Name="yorumlar" ColumnName="yorumlar" />
+          <ScalarProperty Name="urun_ID" ColumnName="urun_ID" />
+          <ScalarProperty Name="puan" ColumnName="puan" />
+          <ScalarProperty Name="musteri_ID" ColumnName="musteri_ID" />
+          <ScalarProperty Name="restoran_ID" ColumnName="restoran_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

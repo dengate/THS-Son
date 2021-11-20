@@ -1,0 +1,261 @@
+﻿@using THS.Models;
+
+@{
+    List<urun> urun = ViewData["urun"] as List<urun>;
+    List<altkategori> AltKategori = ViewData["AltKategori"] as List<altkategori>;
+    List<kategori> Kategori = ViewData["Kategori"] as List<kategori>;     
+    }
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/resimler/icon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="~/Scripts/css/Urun.css" rel="stylesheet" />
+    <link href="~/Scripts/css/Popup.css" rel="stylesheet" />
+    <script src="~/Scripts/js/RestoranScript.js"></script>
+    <link href="~/Scripts/css/Menu.css" rel="stylesheet" />
+    <script src="~/Scripts/js/Menubuton.js"></script>
+    <link href="~/Scripts/css/Loader.css" rel="stylesheet" />
+    <script src="~/Scripts/js/Logo.js"></script>
+
+     <style>
+         body {
+             background-image: url('/resimler/siyah.jpg') !important;
+             -webkit-background-size: auto !important;
+             -moz-background-size: auto !important;
+             -o-background-size: auto !important;
+             background-size: auto !important;
+         }
+     </style>
+</head>
+   
+<body>
+    <div class="loading">
+         <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Yükleniyor</span>
+    </div>
+            </div>
+    <div style="display:none" id="url">@Session["url"]</div>
+    @if (ViewBag.musteridurum == true)
+    {
+        <div class="secenekbackground">
+            <div class="secenekdiv">
+            <div class="secenekodemebuton">
+                <img class="secenekimg" src="~/resimler/odemebutonresmi.jpg" />
+                <div class="secenekyazi">ÖDEME YAP</div>
+            </div>
+            </div>
+            <div class="secenekdiv">
+            <div class="secenekmenubuton">
+                <img class="secenekimg" src="~/resimler/menubutonresmi.jpg" />
+                <div class="secenekyazi">MENÜYE GİT</div>
+            </div>
+                </div>
+            </div>
+    }
+    <div class="container-fluid menu" id="section1">
+    <div class="container">
+     
+ <img class="logo" src="~/resimler/logo5.png" />
+        @if (ViewBag.ziyaret == "1")
+        {
+       <div class="menubuton"><div class="butonn">Menü</div></div>
+        <div class="menubutonlar">
+        <a class="btn" href="/AnaSayfa/iletisim/"><button class="buton">İletişim</button></a>
+        <a class="btn" href="/AnaSayfa/hakkimizda/"><button class="buton">Hakkımızda</button></a>
+        <a class="btn" href="/KullanıcıGırıs/KullanıcıGırısIndex/"><button class="buton">Ana Sayfa</button></a>
+       </div>
+        }
+        else
+        {
+                <div class="masanumara">Masa: @Session["id"].ToString()</div>
+        }
+
+        
+</div>
+   </div>
+    @if (ViewBag.ziyaret == "0")
+    {
+        <a class="sepet" href="/Restoranlar/Sepet"><div class="sepetsayi">@ViewBag.sepetmktr</div><div class="sepetyazi">Sepet</div></a>
+    }    
+    @if (ViewBag.ziyaret == "1")
+    {
+        <a class="rezervasyon" href="/isletme/Rezervasyon"><div class="sepetyazi">Rezervasyon</div></a>
+    } 
+    
+    <a class="yukari" href="#section1"><div class="sepetyazi">^</div></a>
+         <div class="container aramacontainer" style="height:200px !important">
+        <div class="sehirsec">
+          <p>Kategori Seçiniz</p>
+        <select class="form-control form-control-lg" id="KategoriSecim">
+            <option class="gizli"  style="display:none; visibility:hidden; opacity:0;">000</option><option selected id="secili">Kategori..</option> 
+            @for (int i = 0; i < Kategori.Count; i++)
+            {
+                             
+                <option class="gizli" style="display:none; visibility:hidden; opacity:0;">@Kategori[i].Kategori_ID</option><option>@Kategori[i].Kategori_ismi</option>
+            }
+
+        </select>
+            </div>
+          
+         <div class="isletmesec">
+          <p>Alt Kategori</p>
+        <select class="form-control form-control-lg" id="AltkategoriSecim">
+            <option selected>AltKategori..</option> 
+        </select>
+            </div>
+             <div style="float: left;width: 100%;margin: auto;margin-top: 10px;">
+          <p>Sırala</p>
+        <select class="form-control form-control-lg" id="SiralamaSecim">
+            <option value="0" selected="">Seçiniz..</option>  
+            <option value="1">En Yüksek Fiyat</option> 
+            <option value="2">En Düşük Fiyat</option>
+            <option value="3">En Yüksek Kalori</option>
+            <option value="4">En Düşük Kalori</option>
+        </select>
+            </div>
+
+    </div>
+
+    
+    
+    <div class="container urunlercontainer" id="urunler">
+        @for (int i = 0; i < urun.Count; i++)
+        {
+            <div class="uruncontainer" id="urun">
+            <div class="urunust">
+            <img src="~/Fotograflar/@urun[i].Urun_resmi" class="urunimg" />
+            @if (ViewBag.ziyaret == "0")
+            {
+                    <div class="urunyanbtn" id="sdf">
+               <div class="urunyanbtndiv1">
+                   <div class="urunyanbtndiv2">
+                       <div class="urunyanbtndiv3">Sepete Ekle</div>
+
+                   </div>
+
+               </div>
+
+           </div>
+            }  
+           
+                </div>
+                <div id="urnid" style="display:none;">@urun[i].Urun_ID</div><div class="urunisim" id="urunism">@urun[i].Urun_adi</div>
+            <div class="urunaltbtn">
+                <div class="urunaltbtndiv1"><div class="urunaltbtndiv3">Fiyat:</div><div class="urunaltbtndiv2">@urun[i].Urun_fiyati TL</div></div>
+                <div class="urunaltbtndiv1"><div class="urunaltbtndiv3">Kalori:</div><div class="urunaltbtndiv2">@urun[i].Urun_kalorisi kcal</div></div>
+                <div id="detaybtn" class="urunaltbtndiv1 detaybtn"><div class="urunaltbtndivdetay">Detay</div></div>
+            </div>
+            </div>
+        }
+        
+    </div>
+    @if (ViewBag.ziyaret == "0")
+    {
+<div id="myModal" class="modal1">
+
+    <div id="success-box">
+        <div class="carpi"><a class="close">&times;</a></div>
+    <div class="emoji">
+        <img style="width:300px; height:250px;" id="image" />
+    </div>
+        <div class="mesaj" id="msggg"></div>
+        <div class="mesaj"><span>bu ürünü sepetinize eklemek istiyor musunuz?</span></div>
+        <div class="miktar" style="height:25px; text-align:center; margin-bottom:10px;">
+            <div style="height:25px; width:140px; margin:auto;">
+            <div id="minus" style="float:left; height:24px; width:30px; border:1px solid #000; text-align:center; cursor:pointer;"><div class="tus"  style="margin:auto">&minus;</div></div>
+            <div id="mtr" style="float:left; height:24px; width:80px; border:1px solid #000; text-align:center;"><div class="tus" id="mktr" style="margin:auto">1</div></div>
+            <div id="plus" style="float:left; height:24px; width:30px; border:1px solid #000; text-align:center; cursor:pointer;"><div class="tus"  style="margin:auto">&plus;</div></div>
+            </div>
+        </div>
+        <div class="btn-box">
+            <div><button class="button-box" id="ekle">Onayla</button></div>
+            <div><button class="button-box" id="iptal">İptal</button></div>
+        </div>
+    
+        </div>
+    </div>
+
+        <div class="modal3">
+<div  class="Detay">
+    <div class="carpi2"><a class="close3">&times;</a></div>
+    <div style="text-align: center; height: 190px;">
+        <div style="padding-top:15%; font-size:18px; color:#3d5892;">
+            Siparişiniz Sepete Eklendi!!
+        </div>
+    </div>
+</div>
+        </div>    
+    }
+        <div class="modal2">
+<div id="Detaypup" class="Detay">
+    <div class="carpi2"><a class="close2">&times;</a></div>
+    <div id="detayurunid" style="display:none;"></div>
+    <div style="text-align: center; height: 190px;">
+        <div id="detayazi" style="margin-top:10px; width:100%; height:100px; overflow:auto; margin-bottom:30px;">
+            <div id="detaypuan" style="width:80%; margin:auto; margin-bottom:15px"></div>
+            <div id="detayaciklama" style="width:80%; margin:auto"></div>
+        </div>
+        <div style="width:100%;">
+            <div id="yorumlar" class="yorumlarbutonu">
+                <div style="margin:auto; padding-top:10px;">Yorumlar</div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    <div class="modal4">
+
+    <div class="yorumpop">
+        <div class="carpi"><a class="close" id="yorumclose">&times;</a></div>
+        <div id="yorumlardivi" class="yorumlardivi">
+            
+        </div>
+    
+        </div>
+    </div>
+        @RenderBody()
+    <div class="container-fluid" id="footer">
+    <footer>
+        <div class="container" style="height:200px; margin-top:45px; overflow:hidden;">
+            <div class="footericon">
+                <img src="~/resimler/logo6.png" width="70px"; height="70px;"/>
+            </div>
+            <div class="footerbilgi">
+                <div class="contact">
+                    <div class="contact1">İletişim</div>
+                   <div class="contact2">E-mail: aehapdaeog@gmail.com</div>
+                    <div class="contact3">Telefon: 05079647410</div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback1">Feedback</div>
+                    <div class="feedback2">Lütfen fikirlerinizi, hata raporlarınızı,</div>
+                    <div class="feedback3">önerilerinizi bize gönderin!</div>
+                    <div class="feedback3">Herhangi bir geri bildirim</div>
+                    <div class="feedback3">bizim için çok değerlidir.</div>
+                </div>
+            </div>
+            <div class="smtext"><span class="socialtext">Bizi takip edin:</span></div>
+            <div class="socialmedia">   
+                <a class="icon" href="https://www.facebook.com/Temass%C4%B1z-Hizmet-Sistemi-101024968756392"><div class="smicons" style="background-color:#3d5892"><img class="fpng" src="~/resimler/facebook.png"  /></div></a>
+                 <a class="icon" href="https://www.instagram.com/temassizhizmetsistemi/?hl=tr"><div class="smicons" style="background-color:#993c90"><img class="ipng" src="~/resimler/instagram.png"  /></div></a>
+                 <a class="icon" href="https://twitter.com/TemassizS?s=20"><div class="smicons" style="background-color:#26a0ec"><img class="tpng" src="~/resimler/twitter.jpg"  /></div></a>
+            </div>       
+        </div>
+    </footer>
+</div>
+</body>
+</html>

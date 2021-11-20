@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Siparisler";
+    Layout = "~/Views/Shared/KontrolLayout.cshtml";
+}
+
+@foreach (var item in ViewBag.Siparisler)
+        {
+            <div id="altdivbtns" class="altdivbtns">
+                <div id="mstid" style="display:none;">@item.mstid</div>
+            <div class="altdivbtnsol">
+                <div class="altdivbtnsolust">Masa</div>
+                <div class="altdivbtnsolalt">@item.masaid</div>
+            </div>
+            <div class="altdivbtnsag">
+                <div class="altdivbtnsagust">Siparişler</div>
+                <div class="altdivbtnsagalt">@item.urunadi</div>
+            </div>
+        </div>
+        }

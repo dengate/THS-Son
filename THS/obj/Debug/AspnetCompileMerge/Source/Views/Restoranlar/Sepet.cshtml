@@ -1,0 +1,136 @@
+﻿@using THS.Models;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/resimler/icon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Sepet</title>
+    <link href="~/Scripts/css/Sepet.css" rel="stylesheet" />
+    <script src="~/Scripts/js/Sepet.js"></script>
+    <link href="~/Scripts/css/Popup.css" rel="stylesheet" />
+    <link href="~/Scripts/css/Loader.css" rel="stylesheet" />
+    <script src="~/Scripts/js/Logo.js"></script>
+</head>
+
+<body>
+
+    <div class="loading">
+         <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Yükleniyor</span>
+    </div>
+            </div>
+    <div class="container-fluid menu" >
+    <div class="container">
+     
+ <img class="logo" src="~/resimler/logo5.png" />
+
+        <a class="btn" href="@string.Format("/Restoranlar/GetId?urunadi=é{0}~{1}", ViewBag.isletme,ViewBag.masanum)"><button class="buton">Menüye Dön</button></a>
+</div>
+   </div>
+    <div class="container sepetcontainer">
+        <div class="sepetbaslikcontainer">
+            <div class="sepeturunisim">
+                <div class="sepeturunyazi">Ürün Adı</div>
+            </div>
+            <div class="sepeturunmiktar">
+                <div class="sepeturunyazi">Miktar</div>
+            </div>
+            <div class="sepeturunfiyat">
+                <div class="sepeturunyazi">Fiyat</div>
+            </div>
+
+        </div>
+        <div class="sepeturunlercontainer" id="urunler">
+            @foreach (var item in ViewBag.Liste)
+            {
+                         
+                <div class="sepeturuncontainer">
+                    <div style="display: none" id="id">@item.ıd</div>
+                    <div class="sepeturunisim">
+                        <div class="sepeturunyazi" id="urunism">@item.urunism</div>
+                    </div>
+                    <div class="sepeturunmiktar">
+                        <div class="sepeturunyazi" id="urunmktr">@item.miktar</div>
+                    </div>
+                    <div class="sepeturunfiyat">
+                        <div class="sepeturunyazi" id="urunfiyat">@(Convert.ToInt32(item.miktar) * Convert.ToDouble(item.urunfiyat))</div>
+                    </div>
+                    <div class="sepetsilbuton">
+                        <div class="sepetsilbutonyazi" id="sil">Sil </div>
+                    </div>
+
+                </div>
+            }
+
+
+        </div>
+        <div class="sepeturunlertoplamfiyat">
+            <div class="sepeturunlertoplamfiyatyazi">Toplam: @ViewBag.Toplam TL</div>
+        </div>
+       <div class="sepethazırlanmadiv"> <div class="sepethazırlanmasure">
+            <div>Tahmini hazırlanma süresi:</div>
+            <div id="pisme">@ViewBag.pismetoplam dk</div>
+            </div>
+           </div>
+        <div class="sepetsiparisbtndiv" id="siparisbtn"><div class="sepetsiparisbtn"><div class="sepetsiparisbtnyazi">Sipariş Ver</div></div></div>
+    </div>
+
+        <div class="modal2">
+<div id="Detaypup" class="Detay">
+    <div class="carpi2"><a class="close2">&times;</a></div>
+    <div style="text-align: center; height: 190px;">
+        <div id="detayazi" style="padding-top:15%; font-size:18px; color:#3d5892;">
+            
+        </div>
+    </div>
+</div>
+        </div>
+
+    <div class="container-fluid" id="footer">
+    <footer>
+        <div class="container" style="height:200px; margin-top:45px; overflow:hidden;">
+            <div class="footericon">
+                <img src="~/resimler/logo6.png" width="70px"; height="70px;"/>
+            </div>
+            <div class="footerbilgi">
+                <div class="contact">
+                    <div class="contact1">İletişim</div>
+                   <div class="contact2">E-mail: aehapdaeog@gmail.com</div>
+                    <div class="contact3">Telefon: 05079647410</div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback1">Feedback</div>
+                    <div class="feedback2">Lütfen fikirlerinizi, hata raporlarınızı,</div>
+                    <div class="feedback3">önerilerinizi bize gönderin!</div>
+                    <div class="feedback3">Herhangi bir geri bildirim</div>
+                    <div class="feedback3">bizim için çok değerlidir.</div>
+                </div>
+            </div>
+            <div class="smtext"><span class="socialtext">Bizi takip edin:</span></div>
+            <div class="socialmedia">   
+                 <a class="icon" href="https://www.facebook.com/Temass%C4%B1z-Hizmet-Sistemi-101024968756392"><div class="smicons" style="background-color:#3d5892"><img class="fpng" src="~/resimler/facebook.png"  /></div></a>
+                 <a class="icon" href="https://www.instagram.com/temassizhizmetsistemi/?hl=tr"><div class="smicons" style="background-color:#993c90"><img class="ipng" src="~/resimler/instagram.png"  /></div></a>
+                 <a class="icon" href="https://twitter.com/TemassizS?s=20"><div class="smicons" style="background-color:#26a0ec"><img class="tpng" src="~/resimler/twitter.jpg"  /></div></a>
+            </div>       
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+
